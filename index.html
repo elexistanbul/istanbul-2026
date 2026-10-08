@@ -9,9 +9,9 @@
 <style>
 :root{
   --ink:#252b2d;--muted:#6d7678;--paper:#f7f8f6;--paper2:#fff;
-  --sand:#e7e9e5;--blue:#536f78;--blue-dark:#3e5961;
-  --tile:#6f9795;--tile-light:#e8f0ef;
-  --terracotta:#a96857;--terracotta-light:#f2e7e3;
+  --sand:#e4e9ec;--blue:#2f667b;--blue-dark:#214e60;
+  --tile:#4d8ea4;--tile-light:#e6f1f4;
+  --terracotta:#a96755;--terracotta-light:#f3e6e1;
   --brass:#a58a5a;--brass-light:#f1ede4;--line:#dfe3e0;
   --white:#fff;--shadow:0 14px 40px rgba(37,43,45,.07);--radius:22px;
 }
@@ -56,6 +56,9 @@ h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(3
 details{border-top:1px solid var(--line);padding:16px 0}details:first-child{border-top:0}summary{cursor:pointer;list-style:none;font-weight:700}summary::-webkit-details-marker{display:none}summary:after{content:"+";float:right;color:var(--muted)}details[open] summary:after{content:"–"}
 footer{padding:55px 0 70px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
 @media(max-width:800px){.grid-2,.grid-3,.two-col{grid-template-columns:1fr}section{padding:58px 0}.hero{min-height:82vh}.hero-inner{padding-bottom:48px}.feature{min-height:360px}}
+
+.type{display:inline-block;margin-right:7px;color:var(--blue);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em}
+.see-table{width:100%;border-collapse:collapse;margin-top:22px;font-size:14px}.see-table th,.see-table td{padding:12px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.see-table th{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--blue)}.see-table td:first-child{font-weight:700}.linkrow a{display:inline-block;margin-right:10px}
 </style>
 </head>
 <body>
@@ -68,7 +71,7 @@ footer{padding:55px 0 70px;border-top:1px solid var(--line);color:var(--muted);f
 </div></header>
 
 <nav class="nav"><div class="container nav-inner">
-<a href="#prima">Prima</a><a href="#itinerario">Itinerario</a><a href="#mangiare">Mangiare</a><a href="#design">Design</a><a href="#vedere">Da vedere</a><a href="#pratica">Info utili</a>
+<a href="#prima">Prima</a><a href="#itinerario">Itinerario</a><a href="#mangiare">Mangiare</a><a href="#design">Design</a><a href="#itinerario">Cosa vedere</a><a href="#pratica">Info utili</a>
 </div></nav>
 
 <main>
@@ -89,42 +92,62 @@ footer{padding:55px 0 70px;border-top:1px solid var(--line);color:var(--muted);f
 </div></section>
 
 <section id="itinerario"><div class="container">
-<div class="eyebrow">02 · quattro giorni</div><h2>Itinerario</h2>
-<p class="lead">Un asse chiaro per ogni giornata. Le alternative sono volutamente poche: l'obiettivo è vivere i quartieri, non fare una corsa tra indirizzi.</p>
+<div class="eyebrow">02 · prima la mappa mentale</div><h2>Cosa stiamo visitando</h2>
+<p class="lead">Prima degli itinerari, una piccola legenda integrata: così ogni nome ha subito un contesto e non serve conoscere Istanbul in anticipo.</p>
+<div class="card" style="margin-top:24px"><div class="card-pad" style="padding:12px 18px">
+<table class="see-table"><thead><tr><th>Luogo</th><th>Che cos'è</th><th>Zona</th><th>Perché andarci</th></tr></thead><tbody>
+<tr><td>Santa Sofia</td><td>monumento / ex basilica e moschea</td><td>Sultanahmet</td><td>Il grande punto di partenza della città storica.</td></tr>
+<tr><td>Cisterna Basilica</td><td>cisterna sotterranea bizantina</td><td>Sultanahmet</td><td>Visita breve e molto scenografica.</td></tr>
+<tr><td>Moschea Blu</td><td>moschea ottomana</td><td>Sultanahmet</td><td>Da abbinare naturalmente a Santa Sofia.</td></tr>
+<tr><td>Arasta Bazaar</td><td>piccolo bazaar di negozi</td><td>Sultanahmet</td><td>Più raccolto del Grand Bazaar, utile per una passeggiata.</td></tr>
+<tr><td>Eminönü</td><td>quartiere / nodo di trasporti</td><td>Corno d'Oro</td><td>Mercato delle Spezie, traghetti e balık ekmek.</td></tr>
+<tr><td>Karaköy · Tophane · Galata</td><td>quartieri</td><td>Beyoğlu</td><td>Gallerie, caffè, design, Torre di Galata e passeggiate.</td></tr>
+<tr><td>Çukurcuma</td><td>quartiere di antiquari e design</td><td>Beyoğlu</td><td>Interessante se piacciono antiquariato e oggetti d'autore.</td></tr>
+<tr><td>Topkapı</td><td>palazzo ottomano</td><td>Sultanahmet</td><td>Padiglioni, collezioni e vista sul Bosforo.</td></tr>
+<tr><td>Grand Bazaar</td><td>grande mercato coperto storico</td><td>Beyazıt</td><td>Gioielli, tessili, ceramiche, tappeti e botteghe.</td></tr>
+<tr><td>Nişantaşı</td><td>quartiere residenziale e dello shopping</td><td>Şişli</td><td>Moda, ristoranti e design contemporaneo.</td></tr>
+<tr><td>Kadıköy</td><td>quartiere sulla sponda asiatica</td><td>Asia</td><td>Mercato, botteghe, caffè e atmosfera più locale.</td></tr>
+<tr><td>Kumkapı</td><td>quartiere storico sul Mar di Marmara</td><td>Fatih</td><td>Pesce, meyhane e una forte storia armena; è famoso soprattutto la sera.</td></tr>
+</tbody></table>
+</div></div>
+
+<h2 style="margin-top:70px">Itinerari suggeriti</h2>
+<p class="lead">Sono tracce, non un programma da seguire alla lettera: possiamo spostare pranzo, visite e cene in base a energie, orari e voglia del momento.</p>
 <div class="grid grid-2" style="margin-top:30px">
 
-<article class="card"><img class="image" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Hagia_Sophia_Istanbul_Old_City%2C_Turkey_(Unsplash).jpg?width=1100" alt="Santa Sofia a Istanbul"><div class="day">
+<article class="card"><div class="day">
 <span class="pill">ven 30 ottobre</span><h3>Arrivo</h3>
-<div class="day-item"><div class="time">sera</div><strong>Arrivo e hotel</strong><span>Trasferimento, check-in e una prima passeggiata senza programma rigido.</span></div>
-<div class="day-item"><div class="time">cena</div><strong>Kumkapı oppure vicino all'hotel</strong><span>Per la prima sera meglio una soluzione semplice, senza prenotazioni troppo rigide.</span></div>
+<div class="day-item"><div class="time">sera</div><strong>Hotel + prima passeggiata</strong><span>Check-in e una prima uscita senza programma. Se avete voglia di cena fuori, potete scegliere tra una soluzione vicina all'hotel o Kumkapı.</span></div>
+<div class="day-item"><div class="time">vicino all'hotel</div><strong>Tre opzioni semplici</strong><span><strong>Tarihi Şar Restaurant</strong> — Gedikpaşa Cd. 7A, circa 2 minuti a piedi; cucina turca semplice. <strong>Emek Saray Restaurant</strong> — Galeria Laleli, Harikzedeler Sk. 19, 2° piano; più completo ma informale. <strong>Kebap’s 63</strong> — Ragıp Bey Sk. 36, per un kebab senza impegno.</span></div>
+<div class="day-item"><div class="time">oppure</div><strong>Kumkapı</strong><span>È un vero <strong>quartiere storico di Fatih</strong>, sul Mar di Marmara, noto per ristoranti di pesce e meyhane (taverne). Non è il nome di un ristorante: è una zona della città.</span></div>
 </div></article>
 
-<article class="card"><div class="day"><span class="pill">sab 31 ottobre</span><h3>Sultanahmet → Galata</h3>
-<div class="day-item"><div class="time">09:00</div><strong>Santa Sofia</strong><span>Partire presto.</span></div>
-<div class="day-item"><div class="time">10:15</div><strong>Cisterna Basilica</strong><span>Una delle visite più suggestive della mattina.</span></div>
-<div class="day-item"><div class="time">11:30</div><strong>Moschea Blu + Arasta Bazaar</strong><span>Passeggiata nella zona storica.</span></div>
-<div class="day-item"><div class="time">12:45</div><strong>Eminönü</strong><span>Hamdi oppure balık ekmek.</span></div>
-<div class="day-item"><div class="time">pomeriggio</div><strong>Karaköy · Tophane · Galata</strong><span>Hiç, Galata e, se interessa, Çukurcuma.</span></div>
-<div class="day-item"><div class="time">sera</div><strong>Beyoğlu</strong><span>Hıcı Abdullah, Karaköy Lokantası oppure una cena più speciale.</span></div>
+<article class="card"><div class="day"><span class="pill">sab 31 ottobre</span><h3>Sultanahmet → Eminönü → Galata</h3>
+<div class="day-item"><div class="time">09:00 circa</div><strong>Santa Sofia <span class="type">monumento</span></strong><span>Partire presto per dedicare la prima parte della mattina alla zona storica, senza concentrare troppe visite una dopo l'altra.</span></div>
+<div class="day-item"><div class="time">poi</div><strong>Cisterna Basilica <span class="type">cisterna bizantina</span></strong><span>Una visita sotterranea molto scenografica, a pochi minuti da Santa Sofia.</span></div>
+<div class="day-item"><div class="time">fine mattina</div><strong>Moschea Blu + Arasta Bazaar <span class="type">moschea · bazaar</span></strong><span>La moschea è uno dei grandi monumenti ottomani; l'Arasta è un piccolo bazaar di negozi, più raccolto del Grand Bazaar.</span></div>
+<div class="day-item"><div class="time">pranzo</div><strong>Eminönü <span class="type">quartiere</span></strong><span>Zona sul Corno d'Oro e importante nodo di traghetti. Per pranzo possiamo valutare <strong>Hamdi Restaurant</strong> oppure il più informale <strong>balık ekmek</strong>, il panino con pesce alla griglia venduto sul waterfront.</span></div>
+<div class="day-item"><div class="time">pomeriggio</div><strong>Karaköy · Tophane · Galata <span class="type">quartieri</span></strong><span>Una passeggiata tra caffè, gallerie e negozi di design: <strong>Hiç Contemporary Crafts</strong> è un negozio di artigianato/design; Galata è la zona della torre; <strong>Çukurcuma</strong>, poco più a nord, è interessante per antiquariato e oggetti d'autore.</span></div>
+<div class="day-item"><div class="time">sera</div><strong>Beyoğlu <span class="type">quartiere</span></strong><span>Per cena possiamo valutare <strong>Hıcı Abdullah</strong>, storico ristorante di cucina turca in zona Istiklal, oppure <strong>Karaköy Lokantası</strong>, ristorante turco contemporaneo nel quartiere di Karaköy. In alternativa, una cena più speciale.</span></div>
 </div></article>
 
-<article class="card"><div class="day"><span class="pill">dom 1 novembre</span><h3>Maratona + Bosforo</h3>
-<div class="day-item"><div class="time">mattina</div><strong>Maratona</strong><span>La gara attraversa il Bosforo e arriva a Sultanahmet. Chi non segue la gara può iniziare con una mattina libera.</span></div>
-<div class="day-item"><div class="time">pranzo</div><strong>Kadıköy oppure Eminönü</strong><span>Çiya Sofrası se si attraversa il Bosforo; Hamdi se si resta in Europa.</span></div>
-<div class="day-item"><div class="time">pomeriggio</div><strong>Bazar delle Spezie + traghetto</strong><span>Un pomeriggio leggero, con una tratta sul Bosforo o verso Kadıköy/Üsküdar.</span></div>
-<div class="day-item"><div class="time">sera</div><strong>Cena sul Bosforo oppure Nişantaşı</strong><span>Hünkar o Borsa Restaurant Kandılli.</span></div>
+<article class="card"><img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/%C5%9EH-Fatih_approaching_Emin%C3%B6n%C3%BC_Ferry_Terminal%2C_March_2024_05.jpg/960px-%C5%9EH-Fatih_approaching_Emin%C3%B6n%C3%BC_Ferry_Terminal%2C_March_2024_05.jpg" alt="Traghetto ŞH-Fatih in arrivo al molo di Eminönü"><div class="day"><span class="pill">dom 1 novembre</span><h3>Maratona + Bosforo</h3>
+<div class="day-item"><div class="time">mattina</div><strong>Maratona <span class="type">evento</span></strong><span>La gara attraversa il Bosforo e coinvolge molte strade del centro. Possiamo seguirne un tratto oppure usare la mattina per un'attività più tranquilla.</span></div>
+<div class="day-item"><div class="time">pranzo</div><strong>Kadıköy oppure Eminönü <span class="type">quartieri</span></strong><span><strong>Kadıköy</strong> è sulla sponda asiatica, con mercato e ristoranti; <strong>Eminönü</strong> resta sulla sponda europea, vicino al Bazar delle Spezie e ai traghetti. <strong>Çiya Sofrası</strong> è l'opzione gastronomica da considerare a Kadıköy; <strong>Hamdi</strong> quella da considerare a Eminönü.</span></div>
+<div class="day-item"><div class="time">pomeriggio</div><strong>Bazar delle Spezie + traghetto <span class="type">mercato · trasporto</span></strong><span>Il Bazar delle Spezie è un mercato coperto storico; dal vicino molo possiamo poi prendere un traghetto verso Kadıköy, Üsküdar o fare una tratta sul Bosforo.</span></div>
+<div class="day-item"><div class="time">sera</div><strong>Possibili cene</strong><span><strong>Hünkar</strong> è un ristorante di cucina ottomana/turca a Nişantaşı. <strong>Borsa Restaurant</strong> è invece un ristorante di fascia più alta nel Palazzo Adile Sultan a Kandilli, con vista sul Bosforo: da considerare se cerchiamo una cena speciale.</span></div>
 </div></article>
 
-<article class="card"><div class="day"><span class="pill">lun 2 novembre</span><h3>Topkapı → Gran Bazar → Nişantaşı</h3>
-<div class="day-item"><div class="time">09:00</div><strong>Palazzo Topkapı</strong><span>Giornata ideale: il martedì è normalmente giorno di chiusura.</span></div>
-<div class="day-item"><div class="time">11:30</div><strong>Gran Bazar</strong><span>Gioielli, tessili, ceramiche, tappeti.</span></div>
-<div class="day-item"><div class="time">13:30</div><strong>Mahir Lokantası</strong><span>Pranzo di cucina anatolica tradizionale.</span></div>
-<div class="day-item"><div class="time">pomeriggio</div><strong>Nişantaşı + design</strong><span>Abdi İpekçi, Mim Kemal Öke e eventuali atelier.</span></div>
-<div class="day-item"><div class="time">sera</div><strong>Ultima cena</strong><span>Libera oppure una delle cene speciali non ancora provate.</span></div>
+<article class="card"><div class="day"><span class="pill">lun 2 novembre</span><h3>Topkapı → Grand Bazaar → Nişantaşı</h3>
+<div class="day-item"><div class="time">mattina</div><strong>Palazzo Topkapı <span class="type">palazzo ottomano</span></strong><span>Grande complesso ottomano con cortili, collezioni e vista sul Bosforo. È una visita da fare con un po' di tempo a disposizione.</span></div>
+<div class="day-item"><div class="time">poi</div><strong>Grand Bazaar <span class="type">mercato coperto</span></strong><span>Il grande mercato storico di Beyazıt: botteghe di gioielli, tessili, ceramiche, tappeti e oggetti. Da esplorare senza l'obiettivo di “vederlo tutto”.</span></div>
+<div class="day-item"><div class="time">pranzo</div><strong>Mahir Lokantası <span class="type">ristorante · Şişli</span></strong><span>Cucina anatolica tradizionale. Possiamo valutarlo per pranzo, ma non è necessario fissare le 13:30: meglio lasciare l'orario elastico in base a quanto tempo passiamo al Grand Bazaar.</span></div>
+<div class="day-item"><div class="time">pomeriggio</div><strong>Nişantaşı <span class="type">quartiere</span></strong><span>Quartiere elegante di shopping e ristoranti, utile per completare la parte design e gioielli della guida.</span></div>
+<div class="day-item"><div class="time">sera</div><strong>Cena da scegliere sul momento</strong><span>Niente “ultima cena” programmata: possiamo scegliere tra uno degli indirizzi già segnati o cercare qualcosa nella zona in cui ci troviamo.</span></div>
 </div></article>
 
 </div>
-<div class="card" style="margin-top:18px"><div class="card-pad"><span class="pill">mar 3 novembre</span><h3 style="margin-top:10px">Partenza</h3><p>Check-out e trasferimento a Sabiha Gökçen (SAW). Il tempo del trasferimento dipende molto dal traffico: per il volo di ritorno conviene partire con largo anticipo.</p></div></div>
+<div class="card" style="margin-top:18px"><div class="card-pad"><span class="pill">mar 3 novembre</span><h3 style="margin-top:10px">Partenza</h3><p>Check-out e trasferimento a Sabiha Gökçen (SAW). Il traffico può incidere molto sui tempi, quindi qui conviene essere più prudenti con l'orario.</p></div></div>
 </div></section>
 
 <section id="mangiare"><div class="container">
@@ -150,18 +173,18 @@ footer{padding:55px 0 70px;border-top:1px solid var(--line);color:var(--muted);f
 
 <section id="design"><div class="container">
 <div class="eyebrow">04 · design & shopping</div><h2>Ceramiche, tessili, gioielli</h2>
-<p class="lead">Una selezione ragionata di indirizzi dove cercare oggetti contemporanei, artigianato turco e gioielli di ricerca. Niente alta gioielleria come focus: qui contano design, materiali e carattere.</p>
+<p class="lead">Una selezione ragionata di indirizzi dove cercare oggetti contemporanei, artigianato turco e gioielli di ricerca. Niente alta gioielleria come focus: qui contano design, materiali e carattere.</p><div class="note"><strong>Come leggere le schede:</strong> ogni immagine è associata al luogo o al tipo di prodotto quando è stato possibile; sotto trovate sempre <strong>Sito · IG · Maps</strong> quando verificabili. Le foto possono essere sostituite facilmente nel codice cercando il nome del posto o il relativo <code>alt</code>.</div>
 <div class="editorial-grid">
 
-<article class="place-card"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=82" alt="Gioielli contemporanei"><div class="place-body"><div class="place-meta">Galata · contemporaneo</div><h3>Hakan Aktuğ</h3><p>Gioielli contemporanei prodotti in piccole quantità, con un linguaggio che combina tecniche tradizionali e design attuale. Punti vendita tra Kuzguncuk, Kadıköy, Beyoğlu e Galata.</p><div class="linkrow"><a href="https://www.hakanaktug.com/" target="_blank">↗ Sito</a><a href="https://www.google.com/maps/search/?api=1&query=Lunapark+Shop+Serdar-i+Ekrem+17B+Istanbul" target="_blank">↗ Maps · Lunapark</a></div></div></article>
+<article class="place-card"><img src="https://static.wixstatic.com/media/a2d03b_f9415a7ed12146e695ae522ba319486e~mv2.jpg/v1/fill/w_1200,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a2d03b_f9415a7ed12146e695ae522ba319486e~mv2.jpg" alt="Gioielli contemporanei"><div class="place-body"><div class="place-meta">Galata · contemporaneo</div><h3>Hakan Aktuğ</h3><p>Gioielli contemporanei prodotti in piccole quantità, con un linguaggio che combina tecniche tradizionali e design attuale. Punti vendita tra Kuzguncuk, Kadıköy, Beyoğlu e Galata.</p><div class="linkrow"><a href="https://www.hakanaktug.com/" target="_blank">↗ Sito</a><a href="https://www.google.com/maps/search/?api=1&query=Lunapark+Shop+Serdar-i+Ekrem+17B+Istanbul" target="_blank">↗ Maps · Lunapark</a></div></div></article>
 
-<article class="place-card"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&q=82" alt="Gioielli in argento"><div class="place-body"><div class="place-meta">Beyoğlu · atelier</div><h3>Asiaminor Atelier</h3><p>Piccolo laboratorio specializzato soprattutto in argento: interpreta motivi e tecniche dell'Anatolia in forme contemporanee, con lavorazione artigianale.</p><div class="linkrow"><a href="https://www.asiaminoratelier.com/" target="_blank">↗ Sito</a><a href="https://www.google.com/maps/search/?api=1&query=Asiaminor+Atelier+Istanbul" target="_blank">↗ Maps</a></div></div></article>
+<article class="place-card"><img src="https://static.wixstatic.com/media/a2d03b_f9415a7ed12146e695ae522ba319486e~mv2.jpg/v1/fill/w_1200,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a2d03b_f9415a7ed12146e695ae522ba319486e~mv2.jpg" alt="Gioielli in argento"><div class="place-body"><div class="place-meta">Beyoğlu · atelier</div><h3>Asiaminor Atelier</h3><p>Piccolo laboratorio specializzato soprattutto in argento: interpreta motivi e tecniche dell'Anatolia in forme contemporanee, con lavorazione artigianale.</p><div class="linkrow"><a href="https://www.asiaminoratelier.com/" target="_blank">↗ Sito</a><a href="https://www.google.com/maps/search/?api=1&query=Asiaminor+Atelier+Istanbul" target="_blank">↗ Maps</a></div></div></article>
 
-<article class="place-card"><img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=1200&q=82" alt="Oggetti e design contemporaneo"><div class="place-body"><div class="place-meta">Nişantaşı · contemporary jewellery</div><h3>Galeri Santim / Toz Design</h3><p>Galleria dedicata alla gioielleria contemporanea turca. Toz Design lavora sull'incontro tra materiali e tecniche tradizionali e sperimentazione.</p><div class="linkrow"><a href="https://www.galerisantim.com/" target="_blank">↗ Sito</a><a href="https://www.google.com/maps/search/?api=1&query=Galeri+Santim+Nisantasi+Istanbul" target="_blank">↗ Maps</a></div><div class="source-note">I prezzi visibili sul sito permettono anche di farsi un'idea prima di andare.</div></div></article>
+<article class="place-card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Istanbul_asv2020-02_img48_Galata_Tower.jpg/960px-Istanbul_asv2020-02_img48_Galata_Tower.jpg" alt="Oggetti e design contemporaneo"><div class="place-body"><div class="place-meta">Nişantaşı · contemporary jewellery</div><h3>Galeri Santim / Toz Design</h3><p>Galleria dedicata alla gioielleria contemporanea turca. Toz Design lavora sull'incontro tra materiali e tecniche tradizionali e sperimentazione.</p><div class="linkrow"><a href="https://www.galerisantim.com/" target="_blank">↗ Sito</a><a href="https://www.google.com/maps/search/?api=1&query=Galeri+Santim+Nisantasi+Istanbul" target="_blank">↗ Maps</a></div><div class="source-note">I prezzi visibili sul sito permettono anche di farsi un'idea prima di andare.</div></div></article>
 
-<article class="place-card"><img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=82" alt="Interni e artigianato turco"><div class="place-body"><div class="place-meta">Galata · artigianato</div><h3>Hiç Contemporary Crafts</h3><p>Uno dei riferimenti più interessanti per oggetti per la casa, ceramiche, tessili e produzioni di artigiani e designer turchi.</p><div class="linkrow"><a href="http://hiccrafts.com" target="_blank">↗ Sito</a><a href="https://www.instagram.com/hiccrafts/" target="_blank">↗ IG</a><a href="https://www.google.com/maps/search/?api=1&query=Hi%C3%A7+Contemporary+Crafts+L%C3%BCleci+Hendek+Cd+35+Istanbul" target="_blank">↗ Maps</a></div></div></article>
+<article class="place-card"><img src="https://www.buseterim.com.tr/upload/default/2015/2/10/hic1.jpg" alt="Interni e artigianato turco"><div class="place-body"><div class="place-meta">Galata · artigianato</div><h3>Hiç Contemporary Crafts</h3><p>Uno dei riferimenti più interessanti per oggetti per la casa, ceramiche, tessili e produzioni di artigiani e designer turchi.</p><div class="linkrow"><a href="http://hiccrafts.com" target="_blank">↗ Sito</a><a href="https://www.instagram.com/hiccrafts/" target="_blank">↗ IG</a><a href="https://www.google.com/maps/search/?api=1&query=Hi%C3%A7+Contemporary+Crafts+L%C3%BCleci+Hendek+Cd+35+Istanbul" target="_blank">↗ Maps</a></div></div></article>
 
-<article class="place-card"><img src="https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=1200&q=82" alt="Tessili artigianali"><div class="place-body"><div class="place-meta">Sultanahmet · tessili</div><h3>Jennifer's Hamam</h3><p>Pestemal, asciugamani e tessili in cotone e lino lavorati su telai tradizionali. Un indirizzo più pratico e acquistabile rispetto all'alta gioielleria.</p><div class="linkrow"><a href="https://www.jennifershamam.com/" target="_blank">↗ Sito</a><a href="https://www.instagram.com/jennifershamam/" target="_blank">↗ IG</a><a href="https://www.google.com/maps/search/?api=1&query=Jennifer%27s+Hamam+Arasta+Bazaar+Istanbul" target="_blank">↗ Maps</a></div></div></article>
+<article class="place-card"><img src="https://cdn.prod.website-files.com/5cc95ee92fbc114c67c52d06/66256d56bdc897aab71c551d_135%20shopfront.jpg" alt="Tessili artigianali"><div class="place-body"><div class="place-meta">Sultanahmet · tessili</div><h3>Jennifer's Hamam</h3><p>Pestemal, asciugamani e tessili in cotone e lino lavorati su telai tradizionali. Un indirizzo più pratico e acquistabile rispetto all'alta gioielleria.</p><div class="linkrow"><a href="https://www.jennifershamam.com/" target="_blank">↗ Sito</a><a href="https://www.instagram.com/jennifershamam/" target="_blank">↗ IG</a><a href="https://www.google.com/maps/search/?api=1&query=Jennifer%27s+Hamam+Arasta+Bazaar+Istanbul" target="_blank">↗ Maps</a></div></div></article>
 
 <article class="place-card"><img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?auto=format&fit=crop&w=1200&q=82" alt="Design e tessili turchi"><div class="place-body"><div class="place-meta">Sultanahmet · textiles</div><h3>Tulu Textiles</h3><p>Tessili stampati, bedding, cuscini e oggetti per la casa con un forte carattere decorativo. Meglio scrivere prima: il negozio lavora su appuntamento in alcuni giorni.</p><div class="linkrow"><a href="https://www.tulutextiles.com/" target="_blank">↗ Sito</a><a href="https://www.instagram.com/tulutextiles/" target="_blank">↗ IG</a><a href="https://www.google.com/maps/search/?api=1&query=Tulu+Textiles+Peykhane+Sokak+38+Istanbul" target="_blank">↗ Maps</a></div></div></article>
 
@@ -173,36 +196,8 @@ footer{padding:55px 0 70px;border-top:1px solid var(--line);color:var(--muted);f
 <div class="card" style="margin-top:18px"><div class="card-pad"><span class="pill">altri indirizzi</span><h3 style="margin-top:10px">Da segnare se avete tempo</h3><div class="chips" style="margin-top:14px"><span class="chip">Nauna Linen</span><span class="chip">Ham:m</span><span class="chip">Touline Ceramics</span><span class="chip">Hakan Ezer</span><span class="chip">Sedef Çalarkan</span><span class="chip">Cebeci Han</span><span class="chip">Astarcı Han</span></div><p style="margin-top:16px">Per gli atelier e gli indirizzi su appuntamento è meglio scrivere prima. Cebeci Han e Astarcı Han sono invece da vivere soprattutto come piccole corti del Grand Bazaar, interessanti per rame, ottone, antiquariato e tessili.</p></div></div>
 </div></section>
 
-<section id="vedere"><div class="container">
-<div class="eyebrow">05 · la città</div><h2>Da vedere e da vivere</h2>
-<div class="editorial-grid" style="margin-top:28px">
-<article class="place-card"><img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=1200&q=82" alt="Santa Sofia a Istanbul"><div class="place-body"><div class="place-meta">Sultanahmet</div><h3>Santa Sofia</h3><p>Il grande punto di partenza della città storica. Arrivate presto e controllate le modalità di visita prima di andare.</p></div></article>
-<article class="place-card"><img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=82" alt="Moschea Blu a Istanbul"><div class="place-body"><div class="place-meta">Sultanahmet</div><h3>Moschea Blu</h3><p>Da abbinare a Santa Sofia, tenendo conto degli orari di preghiera e dell'abbigliamento richiesto.</p></div></article>
-<article class="place-card"><img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1200&q=82" alt="Bosforo a Istanbul"><div class="place-body"><div class="place-meta">Bosforo</div><h3>Traghetto</h3><p>Uno dei modi migliori per percepire la scala della città: trasporto pubblico e piccola crociera nello stesso gesto.</p></div></article>
-</div>
-
-<div class="grid grid-2" style="margin-top:28px">
-
-<div class="card"><div class="card-pad">
-<details open><summary>Santa Sofia</summary><p>La grande basilica/moschea di Sultanahmet. Conviene arrivare presto e verificare sul sito ufficiale la modalità di visita prevista per i visitatori.</p></details>
-<details><summary>Moschea Blu</summary><p>Da abbinare naturalmente a Santa Sofia. L'accesso è regolato dagli orari di preghiera.</p></details>
-<details><summary>Cisterna Basilica</summary><p>Una visita breve e molto scenografica, facile da inserire nella mattina.</p></details>
-<details><summary>Palazzo Topkapı</summary><p>Grande complesso ottomano con tesoro, padiglioni e vista sul Bosforo. Meglio il lunedì nel vostro calendario.</p></details>
-</div></div>
-
-<div class="card"><div class="card-pad">
-<details open><summary>Galata + Çukurcuma</summary><p>Torre, stradine, antiquari e design. È la parte più “da passeggio” del sabato pomeriggio.</p></details>
-<details><summary>Traghetto sul Bosforo</summary><p>Una delle esperienze più semplici e belle: non serve necessariamente prenotare un tour.</p></details>
-<details><summary>Kadıköy</summary><p>Mercato, botteghe alimentari, caffè e un ritmo più locale sulla sponda asiatica.</p></details>
-<details><summary>Süleymaniye</summary><p>Una grande alternativa a Sultanahmet, soprattutto per la vista sul Corno d'Oro.</p></details>
-</div></div>
-
-</div>
-<div class="note"><strong>Una sola regola:</strong> a Istanbul vale la pena lasciare spazio all'imprevisto. Se un quartiere vi piace, fermatevi lì invece di rincorrere il punto successivo.</div>
-</div></section>
-
 <section id="pratica"><div class="container">
-<div class="eyebrow">06 · praticità</div><h2>Muoversi senza complicarsi la vita</h2>
+<div class="eyebrow">06 · praticità</div><h2>Info utili</h2><p class="lead">Trasporti, pagamenti, maratona, aeroporto e qualche parola utile per orientarsi tra menu, quartieri e indirizzi.</p>
 <div class="grid grid-3" style="margin-top:28px">
 
 <article class="card"><div class="card-pad"><span class="pill">T1</span><h3>Tram</h3><p>Molto utile per Aksaray → Sultanahmet → Eminönü e per la città storica.</p></div></article>
@@ -215,9 +210,9 @@ footer{padding:55px 0 70px;border-top:1px solid var(--line);color:var(--muted);f
 <span class="pill">valuta & pagamenti</span>
 <h3 style="margin-top:10px">Lira turca, carta + un po' di cash</h3>
 <p>La valuta è la <strong>lira turca (₺ / TRY)</strong>. A Istanbul le carte sono ampiamente accettate in hotel, ristoranti, negozi e strutture più grandi, ma per mercati, piccoli caffè, street food e alcune attività è ancora utile avere contanti.</p>
-<p style="margin-top:12px">Per <strong>3 giorni</strong> consigliamo di avere inizialmente circa <strong>2.000–3.000 ₺ a persona</strong> in contanti. Non è il budget complessivo del viaggio: per le spese più importanti conviene usare la carta e, se necessario, prelevare altro durante il soggiorno.</p>
+<p style="margin-top:12px">Per <strong>3 giorni</strong> consigliamo di avere inizialmente circa <strong>2.000–3.000 ₺ a persona</strong> in contanti (circa <strong>36–54 €</strong> al cambio indicativo del 8 ottobre 2026; il cambio può variare). Non è il budget complessivo del viaggio: per le spese più importanti conviene usare la carta e, se necessario, prelevare altro durante il soggiorno.</p>
 <p style="margin-top:12px">Quando il POS propone di scegliere tra euro e lire, <strong>scegli TRY / Turkish Lira</strong>. In questo modo eviti la conversione proposta direttamente dal terminale (DCC), che può applicare un cambio meno conveniente.</p>
-<div class="chips" style="margin-top:16px"><span class="chip">₺ TRY · valuta locale</span><span class="chip">2.000–3.000 ₺ cash / persona</span><span class="chip">Visa / Mastercard</span><span class="chip">pagare in TRY</span></div>
+<div class="chips" style="margin-top:16px"><span class="chip">₺ TRY · valuta locale</span><span class="chip">2.000–3.000 ₺ ≈ 36–54 €*</span><span class="chip">Visa / Mastercard</span><span class="chip">pagare in TRY</span></div>
 </div></div>
 
 <div class="card" style="margin-top:18px"><div class="card-pad"><div class="grid grid-2">
@@ -228,18 +223,24 @@ footer{padding:55px 0 70px;border-top:1px solid var(--line);color:var(--muted);f
 <div class="card" style="margin-top:18px"><div class="card-pad">
 <span class="pill">glossario</span>
 <div class="grid grid-3" style="margin-top:16px">
-<p><strong>Lokanta</strong><br><small>trattoria turca tradizionale</small></p>
-<p><strong>Meze</strong><br><small>piccoli antipasti da condividere</small></p>
-<p><strong>Kahvaltı</strong><br><small>colazione turca</small></p>
-<p><strong>Simit</strong><br><small>pane a ciambella al sesamo</small></p>
-<p><strong>Kaymak</strong><br><small>crema densa, spesso con miele</small></p>
-<p><strong>Pestemal</strong><br><small>telo leggero da hamam</small></p>
+<p><strong>Lokanta</strong><br><small>trattoria turca, spesso con piatti già pronti e cucina casalinga</small></p>
+<p><strong>Meyhane</strong><br><small>taverna tradizionale, spesso centrata su meze, pesce e rakı</small></p>
+<p><strong>Meze</strong><br><small>piccoli antipasti da condividere, freddi o caldi</small></p>
+<p><strong>Kahvaltı</strong><br><small>colazione turca, normalmente molto ricca e condivisa</small></p>
+<p><strong>Simit</strong><br><small>pane ad anello con sesamo, tipico da strada</small></p>
+<p><strong>Balık ekmek</strong><br><small>panino con pesce alla griglia, tipico delle zone dei moli</small></p>
+<p><strong>Kaymak</strong><br><small>crema di latte molto densa, spesso servita con miele</small></p>
+<p><strong>Pestemal</strong><br><small>telo leggero in cotone/lino, tradizionalmente usato nell'hamam</small></p>
+<p><strong>Lokum</strong><br><small>dolcetto gelatinoso aromatizzato, spesso con frutta secca</small></p>
+<p><strong>Rakı</strong><br><small>distillato all'anice, tradizionalmente accompagnato da meze</small></p>
+<p><strong>Çarşı / bazaar</strong><br><small>mercato; “çarşı” è il termine turco generico per area commerciale</small></p>
+<p><strong>Mahalle</strong><br><small>quartiere / vicinato, utile per capire molti indirizzi locali</small></p>
 </div></div></div>
 </div></section>
 
 </main>
 
-<footer><div class="container"><strong>Istanbul · 30 ottobre – 3 novembre 2026</strong><br>Guida condivisa · orari, prezzi, accessi e viabilità possono cambiare: verificare le informazioni operative poco prima della partenza.</div></footer>
+<footer><div class="container"><strong>Istanbul · 30 ottobre – 3 novembre 2026</strong><br>Guida condivisa · orari, prezzi, accessi, immagini e viabilità possono cambiare: verificare le informazioni operative poco prima della partenza. *Conversione indicativa, non budget di viaggio.</div></footer>
 
 </body>
 </html>
