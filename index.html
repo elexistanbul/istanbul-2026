@@ -6,11 +6,12 @@
   <title>Istanbul · 30 ottobre – 3 novembre 2026</title>
   <style>
     :root {
-      --bg: #ffffff;
-      --text: #111111;
-      --text-muted: #555555;
-      --accent: #8b3a2b;
-      --border: #eaeaea;
+      --bg: #f9f8f6;
+      --card-bg: #ffffff;
+      --text: #1a1a1a;
+      --text-muted: #666666;
+      --accent: #b2533e;
+      --border: #e6e4df;
       --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
@@ -18,46 +19,57 @@
     body { background-color: var(--bg); color: var(--text); font-family: var(--sans); line-height: 1.6; padding-bottom: 4rem; }
 
     header {
-      background: #1a1a1a;
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
       color: white;
-      padding: 4rem 1.5rem 2.5rem 1.5rem;
+      padding: 5rem 1.5rem 3.5rem 1.5rem;
       text-align: center;
     }
-    header .tag { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 0.5rem; opacity: 0.8; }
-    header h1 { font-size: 2.5rem; margin-bottom: 0.4rem; font-weight: 600; }
-    header .dates { font-size: 1rem; margin-bottom: 0.8rem; opacity: 0.9; }
-    header .intro { max-width: 600px; margin: 0 auto; font-size: 0.95rem; opacity: 0.85; }
+    header .tag { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 0.5rem; opacity: 0.9; }
+    header h1 { font-size: 2.8rem; margin-bottom: 0.5rem; font-weight: 700; }
+    header .dates { font-size: 1.1rem; margin-bottom: 1rem; font-weight: 500; }
+    header .intro { max-width: 600px; margin: 0 auto; font-size: 1rem; opacity: 0.95; }
 
-    nav { background: #fafafa; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; overflow-x: auto; white-space: nowrap; }
-    nav .nav-container { display: flex; justify-content: center; max-width: 900px; margin: 0 auto; padding: 0.75rem; gap: 1.5rem; }
+    nav { background: var(--card-bg); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; overflow-x: auto; white-space: nowrap; box-shadow: 0 1px 3px rgba(0,0,0,0.03); }
+    nav .nav-container { display: flex; justify-content: center; max-width: 900px; margin: 0 auto; padding: 0.85rem; gap: 1.5rem; }
     nav a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
     nav a:hover { color: var(--accent); }
 
-    main { max-width: 750px; margin: 2.5rem auto; padding: 0 1.5rem; }
-    section { margin-bottom: 3.5rem; border-bottom: 1px solid var(--border); padding-bottom: 2.5rem; }
+    main { max-width: 800px; margin: 2.5rem auto; padding: 0 1.5rem; }
+    section { margin-bottom: 3.5rem; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
     
-    .section-header { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent); margin-bottom: 0.3rem; font-weight: 700; }
-    h2 { font-size: 1.6rem; margin-bottom: 1rem; color: var(--text); }
-    p { margin-bottom: 1rem; color: var(--text-muted); font-size: 0.95rem; }
+    .section-header { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent); margin-bottom: 0.4rem; font-weight: 700; }
+    h2 { font-size: 1.8rem; margin-bottom: 1rem; color: var(--text); }
+    p { margin-bottom: 1rem; color: var(--text-muted); }
 
-    .item-group { margin-top: 1.2rem; display: flex; flex-direction: column; gap: 1.2rem; }
-    .item { background: #fafafa; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; display: flex; flex-direction: column; }
-    .item img { width: 100%; height: 180px; object-fit: cover; }
-    .item-content { padding: 1.2rem; }
-    .item span { font-size: 0.75rem; text-transform: uppercase; color: var(--accent); font-weight: 700; display: block; margin-bottom: 0.2rem; }
-    .item h3 { font-size: 1.1rem; margin-bottom: 0.3rem; color: var(--text); }
-    .item p { font-size: 0.9rem; margin-bottom: 0.6rem; }
+    .grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.2rem; margin-top: 1.5rem; }
+    .card { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; }
+    .card img { width: 100%; height: 160px; object-fit: cover; }
+    .card-body { padding: 1.2rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; }
+    .card h3 { font-size: 1.1rem; margin-bottom: 0.4rem; color: var(--text); }
+    .card span.badge { font-size: 0.75rem; text-transform: uppercase; color: var(--accent); font-weight: 700; display: block; margin-bottom: 0.3rem; }
+    .card p { font-size: 0.9rem; margin-bottom: 0.8rem; }
     
-    .link-row { display: flex; gap: 1rem; margin-top: 0.4rem; }
-    a.link-out { color: var(--accent); text-decoration: none; font-weight: 600; font-size: 0.85rem; }
-    a.link-out:hover { text-decoration: underline; }
+    .link-row { display: flex; gap: 1rem; margin-top: auto; }
+    .btn-link { color: var(--accent); text-decoration: none; font-weight: 600; font-size: 0.85rem; }
+    .btn-link:hover { text-decoration: underline; }
 
-    .itinerary-day { margin-top: 1.5rem; }
-    .itinerary-day h3 { font-size: 1.2rem; margin-bottom: 0.6rem; color: var(--text); border-left: 2px solid var(--accent); padding-left: 0.6rem; }
-    .event { margin-bottom: 0.5rem; font-size: 0.95rem; color: var(--text-muted); }
-    .event strong { color: var(--text); }
+    .itinerary-day { margin-bottom: 2rem; border-left: 3px solid var(--accent); padding-left: 1.2rem; }
+    .itinerary-day h3 { font-size: 1.3rem; margin-bottom: 0.8rem; color: var(--text); }
+    .event-item { margin-bottom: 0.6rem; color: var(--text-muted); font-size: 0.95rem; }
+    .event-time { font-weight: 700; color: var(--accent); font-size: 0.85rem; display: inline-block; margin-right: 0.5rem; width: 85px; }
 
-    footer { text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-top: 3rem; padding: 0 1.5rem; }
+    .shop-list { display: flex; flex-direction: column; gap: 0.8rem; margin-top: 1rem; }
+    .shop-item { display: flex; justify-content: space-between; align-items: center; background: var(--bg); border: 1px solid var(--border); padding: 0.9rem 1.2rem; border-radius: 8px; text-decoration: none; color: inherit; transition: border-color 0.2s; }
+    .shop-item:hover { border-color: var(--accent); }
+    .shop-item strong { color: var(--text); font-size: 0.95rem; }
+    .shop-item small { color: var(--text-muted); display: block; font-size: 0.8rem; }
+
+    footer { text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-top: 4rem; padding: 0 1.5rem; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2rem; }
+      section { padding: 1.2rem; }
+    }
   </style>
 </head>
 <body>
@@ -66,7 +78,7 @@
     <div class="tag">guida di viaggio · condivisa</div>
     <h1>Istanbul</h1>
     <div class="dates">30 ottobre — 3 novembre 2026</div>
-    <div class="intro">Una città da attraversare a piedi, in tram, in traghetto e — soprattutto — senza avere fretta.</div>
+    <p class="intro">Una città da attraversare a piedi, in tram, in traghetto e — soprattutto — senza avere fretta.</p>
   </header>
 
   <nav>
@@ -74,7 +86,7 @@
       <a href="#prima">Prima & Arrivo</a>
       <a href="#itinerario">Itinerario</a>
       <a href="#mangiare">Mangiare</a>
-      <a href="#design">Design & Shop</a>
+      <a href="#design">Design</a>
       <a href="#pratica">Info utili</a>
     </div>
   </nav>
@@ -84,35 +96,41 @@
     <!-- SEZIONE 1 -->
     <section id="prima">
       <div class="section-header">01 · prima di partire & arrivo</div>
-      <h2>Hotel e Trasferimenti (Pegasus / SAW)</h2>
-      <p>Riferimenti essenziali per l'arrivo e i collegamenti dall'aeroporto Sabiha Gökçen.</p>
+      <h2>Le poche cose da sapere</h2>
+      <p>Programma di base, alternative e riferimenti logistici per il gruppo, inclusi i dettagli per il volo Pegasus.</p>
 
-      <div class="item-group">
-        <div class="item">
-          <div class="item-content">
-            <span>hotel base</span>
-            <h3>Istanbul Midpoint Hotel</h3>
-            <p>Situato ad Aksaray (Fatih). Comodo per la linea del tram T1, il Marmaray e la città storica.</p>
-            <a class="link-out" href="https://www.google.com/maps/search/?api=1&query=Istanbul+Midpoint+Hotel+Gazi+Mustafa+Kemal+Pasa+Cd+43+Istanbul" target="_blank">↗ Apri su Google Maps</a>
+      <div class="grid-cards">
+        <article class="card">
+          <div class="card-body">
+            <div>
+              <span class="badge">hotel base</span>
+              <h3>Istanbul Midpoint</h3>
+              <p>Aksaray · Fatih. Comodo per tram T1, Marmaray e per raggiungere rapidamente la città storica.</p>
+            </div>
+            <a class="btn-link" href="https://www.google.com/maps/search/?api=1&query=Istanbul+Midpoint+Hotel+Gazi+Mustafa+Kemal+Pasa+Cd+43+Istanbul" target="_blank">↗ Apri su Maps</a>
           </div>
-        </div>
+        </article>
 
-        <div class="item">
-          <div class="item-content">
-            <span>volo pegasus & aeroporto saw</span>
-            <h3>Trasferimenti da Sabiha Gökçen</h3>
-            <p><strong>Taxi ufficiale:</strong> stima 1.600 - 2.200 TL (~48€-65€).<br><strong>Transfer privato:</strong> ~40€-60€ (consigliato per comodità del gruppo).<br><strong>Durata:</strong> 60-80 minuti verso Aksaray in base al traffico.</p>
+        <article class="card">
+          <div class="card-body">
+            <div>
+              <span class="badge">volo pegasus · saw</span>
+              <h3>Trasferimenti Aeroporto</h3>
+              <p><strong>Taxi ufficiale:</strong> 1.600 - 2.200 TL (~48€-65€).<br><strong>Transfer privato:</strong> ~40€-60€.<br><strong>Durata:</strong> 60-80 min verso Aksaray.</p>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <div class="item">
-          <div class="item-content">
-            <span>trasporti urbani</span>
-            <h3>Istanbulkart</h3>
-            <p>Indispensabile per tram, metro, Marmaray, bus e traghetti.</p>
-            <a class="link-out" href="https://istanbulkart.istanbul/" target="_blank">↗ Sito ufficiale Istanbulkart</a>
+        <article class="card">
+          <div class="card-body">
+            <div>
+              <span class="badge">trasporti</span>
+              <h3>Istanbulkart</h3>
+              <p>La soluzione pratica per tram, metro, Marmaray e traghetti. Utile averla pronta dal primo giorno.</p>
+            </div>
+            <a class="btn-link" href="https://istanbulkart.istanbul/" target="_blank">↗ Sito ufficiale</a>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
@@ -120,39 +138,40 @@
     <section id="itinerario">
       <div class="section-header">02 · quattro giorni</div>
       <h2>Itinerario</h2>
-      <p>Un asse chiaro per ogni giornata, senza corse e con ampi margini di libertà.</p>
+      <p>Un asse chiaro per ogni giornata, pensato per vivere i quartieri senza corse eccessive.</p>
 
       <div class="itinerary-day">
-        <h3>Venerdì 30 ottobre · Arrivo</h3>
-        <div class="event"><strong>Arrivo e hotel:</strong> Atterraggio con Pegasus a SAW, trasferimento ad Aksaray, check-in e prima passeggiata libera.</div>
+        <h3>Ven 30 ottobre · Arrivo</h3>
+        <div class="event-item"><span class="event-time">Pomeriggio</span> Arrivo con Pegasus a Sabiha Gökçen (SAW), trasferimento in hotel ad Aksaray e check-in.</div>
+        <div class="event-item"><span class="event-time">Sera</span> Kumkapı oppure cena semplice nei dintorni dell'hotel.</div>
       </div>
 
       <div class="itinerary-day">
-        <h3>Sabato 31 ottobre · Sultanahmet → Galata</h3>
-        <div class="event"><strong>09:00 — Santa Sofia:</strong> Partire presto.</div>
-        <div class="event"><strong>10:15 — Cisterna Basilica:</strong> Visita suggestiva della mattina.</div>
-        <div class="event"><strong>11:30 — Moschea Blu + Arasta Bazaar</strong></div>
-        <div class="event"><strong>12:45 — Eminönü:</strong> Hamdi oppure balık ekmek.</div>
-        <div class="event"><strong>Pomeriggio — Karaköy & Galata:</strong> Passeggiata tra design e stradine storiche.</div>
+        <h3>Sab 31 ottobre · Sultanahmet → Galata</h3>
+        <div class="event-item"><span class="event-time">09:00</span> <strong>Santa Sofia</strong> · Partire presto.</div>
+        <div class="event-item"><span class="event-time">10:15</span> <strong>Cisterna Basilica</strong> · Visita suggestiva della mattina.</div>
+        <div class="event-item"><span class="event-time">11:30</span> <strong>Moschea Blu + Arasta Bazaar</strong></div>
+        <div class="event-item"><span class="event-time">12:45</span> <strong>Eminönü</strong> · Hamdi oppure balık ekmek.</div>
+        <div class="event-item"><span class="event-time">Pomeriggio</span> Karaköy, Tophane e Galata.</div>
       </div>
 
       <div class="itinerary-day">
-        <h3>Domenica 1 novembre · Maratona + Bosforo</h3>
-        <div class="event"><strong>Mattina:</strong> Maratona di Istanbul (attenzione alle modifiche di viabilità nel centro storico).</div>
-        <div class="event"><strong>Pomeriggio:</strong> Bazar delle Spezie e traghetto panoramico sul Bosforo.</div>
+        <h3>Dom 1 novembre · Maratona + Bosforo</h3>
+        <div class="event-item"><span class="event-time">Mattina</span> <strong>Maratona</strong> · La gara attraversa il Bosforo e arriva a Sultanahmet (attenzione alla viabilità).</div>
+        <div class="event-item"><span class="event-time">Pomeriggio</span> Bazar delle Spezie e traghetto panoramico sul Bosforo.</div>
       </div>
 
       <div class="itinerary-day">
-        <h3>Lunedì 2 novembre · Topkapı → Gran Bazar</h3>
-        <div class="event"><strong>09:00 — Palazzo Topkapı</strong></div>
-        <div class="event"><strong>11:30 — Gran Bazar</strong></div>
-        <div class="event"><strong>13:30 — Mahir Lokantası:</strong> Pranzo tradizionale anatolico.</div>
-        <div class="event"><strong>Pomeriggio — Nişantaşı:</strong> Zona negozi e design.</div>
+        <h3>Lun 2 novembre · Topkapı → Gran Bazar</h3>
+        <div class="event-item"><span class="event-time">09:00</span> <strong>Palazzo Topkapı</strong></div>
+        <div class="event-item"><span class="event-time">11:30</span> <strong>Gran Bazar</strong> · Gioielli, tessili, ceramiche.</div>
+        <div class="event-item"><span class="event-time">13:30</span> <strong>Mahir Lokantası</strong> · Pranzo di cucina tradizionale.</div>
+        <div class="event-item"><span class="event-time">Pomeriggio</span> Nişantaşı e design.</div>
       </div>
 
       <div class="itinerary-day">
-        <h3>Martedì 3 novembre · Partenza</h3>
-        <div class="event">Check-out e rientro verso l'aeroporto SAW per il volo di ritorno con ampio anticipo sul traffico.</div>
+        <h3>Mar 3 novembre · Partenza</h3>
+        <div class="event-item"><span class="event-time"></span> Check-out e trasferimento a Sabiha Gökçen (SAW) con largo anticipo per il volo di ritorno.</div>
       </div>
     </section>
 
@@ -160,33 +179,50 @@
     <section id="mangiare">
       <div class="section-header">03 · tavola</div>
       <h2>Mangiare bene</h2>
-      <p>Selezione di indirizzi con foto e collegamenti utili.</p>
-      
-      <div class="item-group">
-        <div class="item">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Hamdi_Restaurant_Emin%C3%B6n%C3%BC.jpg" alt="Hamdi Restaurant Istanbul">
-          <div class="item-content">
-            <span>Eminönü · Vista & Kebab</span>
-            <h3>Hamdi Restaurant</h3>
-            <p>Kebab, piatti tipici e terrazza panoramica sul Corno d'Oro.</p>
-            <div class="link-row">
-              <a class="link-out" href="https://www.hamdi.com.tr/" target="_blank">↗ Sito web</a>
-              <a class="link-out" href="https://www.google.com/maps/search/?api=1&query=Hamdi+Restaurant+Istanbul" target="_blank">↗ Maps</a>
-            </div>
-          </div>
-        </div>
+      <p>Selezione di indirizzi per zona e occasione.</p>
 
-        <div class="item">
-          <div class="item-content">
-            <span>Nişantaşı · Ottomana</span>
-            <h3>Hünkar</h3>
-            <p>Ristorante storico noto per la cucina tradizionale e l'hünkar beğendi.</p>
+      <div class="grid-cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Ristorante a Istanbul">
+          <div class="card-body">
+            <div>
+              <span class="badge">Nişantaşı · Ottomana</span>
+              <h3>Hünkar</h3>
+              <p>Ristorante storico. Da provare l'hünkar beğendi e i piatti della tradizione.</p>
+            </div>
             <div class="link-row">
-              <a class="link-out" href="https://www.hunkarlokantasi.com/" target="_blank">↗ Sito web</a>
-              <a class="link-out" href="https://www.google.com/maps/search/?api=1&query=Hunkar+Restaurant+Istanbul" target="_blank">↗ Maps</a>
+              <a class="btn-link" href="https://www.hunkarlokantasi.com/" target="_blank">↗ Sito web</a>
+              <a class="btn-link" href="https://www.google.com/maps/search/?api=1&query=Hünkar+Mim+Kemal+Oke+Cd+21+Istanbul" target="_blank">↗ Maps</a>
             </div>
           </div>
-        </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="Cucina anatolica">
+          <div class="card-body">
+            <div>
+              <span class="badge">Şişli · Anatolica</span>
+              <h3>Mahir Lokantası</h3>
+              <p>Lokanta molto tradizionale con piatti del giorno dell'Anatolia orientale.</p>
+            </div>
+            <a class="btn-link" href="https://www.google.com/maps/search/?api=1&query=Mahir+Lokantası+Istanbul" target="_blank">↗ Maps</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Terrazza sul Corno d'Oro">
+          <div class="card-body">
+            <div>
+              <span class="badge">Eminönü · Vista</span>
+              <h3>Hamdi Restaurant</h3>
+              <p>Kebab, mezze e terrazza panoramica sul Corno d'Oro.</p>
+            </div>
+            <div class="link-row">
+              <a class="btn-link" href="https://www.hamdi.com.tr/" target="_blank">↗ Sito web</a>
+              <a class="btn-link" href="https://www.google.com/maps/search/?api=1&query=Hamdi+Restaurant+Istanbul" target="_blank">↗ Maps</a>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -194,42 +230,53 @@
     <section id="design">
       <div class="section-header">04 · design & shopping</div>
       <h2>Ceramiche, tessili, gioielli</h2>
-      <p>Botteghe artigianali, design contemporaneo e mercati storici.</p>
+      <p>Artigianato turco, botteghe storiche e atelier di design.</p>
 
-      <div class="item-group">
-        <div class="item">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Grand_Bazaar_Istanbul_Interior.jpg" alt="Gran Bazar Istanbul">
-          <div class="item-content">
-            <span>Fatih · Mercato storico</span>
-            <h3>Gran Bazar (Kapalıçarşı)</h3>
-            <p>Uno dei mercati coperti più grandi e antichi al mondo: gioielli, tessili, ceramiche e tappeti.</p>
+      <div class="grid-cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?auto=format&fit=crop&w=600&q=80" alt="Artigianato e ceramiche">
+          <div class="card-body">
+            <div>
+              <span class="badge">Galata · Tophane</span>
+              <h3>Hiç Contemporary Crafts</h3>
+              <p>Punto di riferimento per artigianato turco, ceramiche, tessili e oggetti per la casa.</p>
+            </div>
             <div class="link-row">
-              <a class="link-out" href="https://kapalicarsi.com.tr/" target="_blank">↗ Sito ufficiale</a>
-              <a class="link-out" href="https://www.google.com/maps/search/?api=1&query=Grand+Bazaar+Istanbul" target="_blank">↗ Maps</a>
+              <a class="btn-link" href="https://hicistanbul.com/" target="_blank">↗ Sito web</a>
+              <a class="btn-link" href="https://www.google.com/maps/search/?api=1&query=Hic+Contemporary+Crafts+Istanbul" target="_blank">↗ Maps</a>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="item">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Galata_Tower_Istanbul_Turkey.jpg" alt="Galata Tower e negozi">
-          <div class="item-content">
-            <span>Galata · Tophane</span>
-            <h3>Hiç Contemporary Crafts</h3>
-            <p>Punto di riferimento per artigianato turco contemporaneo, ceramiche e oggetti di design per la casa.</p>
-            <div class="link-row">
-              <a class="link-out" href="https://hicistanbul.com/" target="_blank">↗ Sito web</a>
-              <a class="link-out" href="https://www.google.com/maps/search/?api=1&query=Hic+Contemporary+Crafts+Istanbul" target="_blank">↗ Maps</a>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80" alt="Tessuti tradizionali">
+          <div class="card-body">
+            <div>
+              <span class="badge">Sultanahmet</span>
+              <h3>Jennifer's Hamam</h3>
+              <p>Tessuti tradizionali in cotone e lino biologico, pestemal da hamam.</p>
             </div>
+            <a class="btn-link" href="https://www.google.com/maps/search/?api=1&query=Jennifers+Hamam+Istanbul" target="_blank">↗ Maps</a>
           </div>
-        </div>
+        </article>
+      </div>
+
+      <div class="shop-list">
+        <a class="shop-item" href="https://www.google.com/maps/search/?api=1&query=Armaggan+Istanbul" target="_blank">
+          <div><strong>Armaggan</strong><small>design turco · casa · gioielli · Nuruosmaniye</small></div>
+          <span>→</span>
+        </a>
+        <a class="shop-item" href="https://www.google.com/maps/search/?api=1&query=Touline+Ceramics+Istanbul" target="_blank"><div><strong>Touline Ceramics</strong><small>ceramiche · su appuntamento</small></div><span>→</span></a>
+        <a class="shop-item" href="https://www.google.com/maps/search/?api=1&query=Hakan+Ezer+Istanbul" target="_blank"><div><strong>Hakan Ezer</strong><small>antiquariato + design · Çukurcuma</small></div><span>→</span></a>
+        <a class="shop-item" href="https://www.google.com/maps/search/?api=1&query=Sedef+Calarkan+Istanbul" target="_blank"><div><strong>Sedef Çalarkan</strong><small>gioielli + accessori · Nişantaşı</small></div><span>→</span></a>
       </div>
     </section>
 
     <!-- SEZIONE 5 -->
     <section id="pratica">
       <div class="section-header">05 · info utili</div>
-      <h2>Muoversi a Istanbul</h2>
-      <p>Sfruttare la combinazione di tram T1 e Marmaray per evitare i blocchi del traffico cittadino, specialmente durante la giornata della maratona.</p>
+      <h2>Muoversi senza complicarsi la vita</h2>
+      <p>Sfruttare tram T1 e Marmaray. Attenzione particolare alla domenica di maratona per la viabilità del centro storico.</p>
     </section>
 
   </main>
