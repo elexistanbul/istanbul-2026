@@ -36,6 +36,7 @@ h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(3
 .card-pad{padding:24px}.card h3{font-family:Georgia,"Times New Roman",serif;font-size:27px;font-weight:400;margin:0 0 7px}.card p{margin:5px 0 0;color:#566064}
 .pill{display:inline-block;padding:6px 9px;border-radius:999px;background:var(--tile-light);color:var(--blue-dark);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
 .image{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.itinerary-photo{display:block;width:100%;max-width:560px;aspect-ratio:16/9;object-fit:cover;border-radius:14px;margin:12px 0 18px}
 .day{position:relative;padding:28px 28px 28px 35px}.day:before{content:"";position:absolute;left:18px;top:34px;bottom:34px;width:2px;background:var(--sand)}
 .day-item{position:relative;padding:0 0 18px 22px}.day-item:last-child{padding-bottom:0}
 .day-item:before{content:"";position:absolute;left:-1px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--terracotta);box-shadow:0 0 0 4px var(--paper2)}
@@ -94,7 +95,7 @@ footer{padding:55px 0 70px;border-top:1px solid var(--line);color:var(--muted);f
 
 <section id="itinerario"><div class="container">
 <div class="eyebrow">02 · prima la mappa mentale</div><h2>Cosa vedere</h2>
-<p class="lead">Prima degli itinerari, una piccola legenda integrata: così ogni nome ha subito un contesto e non serve conoscere Istanbul in anticipo.</p>
+
 <div class="card" style="margin-top:24px"><div class="card-pad" style="padding:12px 18px">
 <table class="see-table"><thead><tr><th>Luogo</th><th>Che cos'è</th><th>Zona</th><th>Perché andarci</th></tr></thead><tbody>
 <tr><td>Santa Sofia</td><td>monumento / ex basilica e moschea</td><td>Sultanahmet</td><td>Il grande punto di partenza della città storica.</td></tr>
@@ -113,12 +114,11 @@ footer{padding:55px 0 70px;border-top:1px solid var(--line);color:var(--muted);f
 </div></div>
 
 <h2 style="margin-top:70px">Itinerari suggeriti</h2>
-<p class="lead">Sono tracce, non un programma da seguire alla lettera: possiamo spostare pranzo, visite e cene in base a energie, orari e voglia del momento.</p>
+
 <div class="grid grid-2" style="margin-top:30px">
 
-<article class="card"><div class="day">
+<article class="card"><img src="Bosforo_Sunset.jpg" alt="Bosforo al tramonto" class="itinerary-photo"><div class="day">
 <span class="pill">ven 30 ottobre</span><h3>Arrivo</h3>
-<img src="Bosforo_Sunset.jpg" alt="Bosforo al tramonto" class="itinerary-photo">
 <div class="day-item"><div class="time">sera</div><strong>Hotel + prima passeggiata</strong><span>Check-in e una prima uscita senza programma. Se avete voglia di cena fuori, potete scegliere tra una soluzione vicina all'hotel o Kumkapı.</span></div>
 <div class="day-item"><div class="time">vicino all'hotel</div><strong>Tre opzioni semplici</strong><span>
 <a href="https://www.google.com/maps/search/?api=1&query=Tarihi+Şar+Restaurant+Gedikpaşa+Cd+7A+Istanbul" target="_blank" rel="noopener">Tarihi Şar Restaurant</a> <a class="review-link" href="https://www.tripadvisor.it/Restaurant_Review-g293974-d2096877-Reviews-Tarihi_Sar_Restaurant-Istanbul.html" target="_blank" rel="noopener">↗ Recensioni</a> — Gedikpaşa Cd. 7A, circa 2 minuti a piedi; cucina turca semplice.<br>
@@ -128,8 +128,7 @@ footer{padding:55px 0 70px;border-top:1px solid var(--line);color:var(--muted);f
 <div class="day-item"><div class="time">oppure</div><strong>Kumkapı</strong><span>È un vero <strong>quartiere storico di Fatih</strong>, sul Mar di Marmara, noto per ristoranti di pesce e meyhane (taverne). Non è il nome di un ristorante: è una zona della città.</span></div>
 </div></article>
 
-<article class="card"><div class="day"><span class="pill">sab 31 ottobre</span><h3>Sultanahmet → Eminönü → Galata</h3>
-<img src="Moschea_blu.jpg" alt="Moschea Blu di Istanbul" class="itinerary-photo">
+<article class="card"><img src="Moschea_blu.jpg" alt="Moschea Blu di Istanbul" class="itinerary-photo"><div class="day"><span class="pill">sab 31 ottobre</span><h3>Sultanahmet → Eminönü → Galata</h3>
 <div class="day-item"><div class="time">09:00 circa</div><strong>Santa Sofia <span class="type">monumento</span></strong><span>Partire presto per dedicare la prima parte della mattina alla zona storica, senza concentrare troppe visite una dopo l'altra.</span></div>
 <div class="day-item"><div class="time">poi</div><strong>Cisterna Basilica <span class="type">cisterna bizantina</span></strong><span>Una visita sotterranea molto scenografica, a pochi minuti da Santa Sofia.</span></div>
 <div class="day-item"><div class="time">fine mattina</div><strong>Moschea Blu + Arasta Bazaar <span class="type">moschea · bazaar</span></strong><span>La moschea è uno dei grandi monumenti ottomani; l'Arasta è un piccolo bazaar di negozi, più raccolto del Grand Bazaar.</span></div>
@@ -145,8 +144,7 @@ footer{padding:55px 0 70px;border-top:1px solid var(--line);color:var(--muted);f
 <div class="day-item"><div class="time">sera · opzioni</div><strong>Nişantaşı oppure Kandilli <span class="type">quartieri</span></strong><span><strong>Hünkar</strong> è uno storico ristorante di cucina turca e ottomana a Nişantaşı. <strong>Borsa Restaurant</strong> è invece un ristorante elegante nel Palazzo Adile Sultan a Kandilli, affacciato sul Bosforo. Possiamo scegliere in base alla voglia di restare in città o spostarci verso il Bosforo.</span><div class="meal-links"><a href="https://www.hunkar1950.com/" target="_blank">↗ Hünkar · sito</a><a href="https://www.google.com/maps/search/?api=1&query=H%C3%BCnkar+Mim+Kemal+Oke+Cd+21+Istanbul" target="_blank">↗ Maps</a><a href="https://www.borsarestaurants.com/tr/menu" target="_blank">↗ Borsa · menu</a><a href="https://www.google.com/maps/search/?api=1&query=Borsa+Restaurant+Kandilli+Istanbul" target="_blank">↗ Maps</a></div><span class="price">Hünkar · circa 800–1.500 ₺ / persona · ≈ 15–27 € · Borsa · circa 1.200–1.500 ₺ / persona, esclusi alcolici · ≈ 22–27 €</span></div>
 </div></article>
 
-<article class="card"><div class="day"><span class="pill">lun 2 novembre</span><h3>Topkapı → Grand Bazaar → Nişantaşı</h3>
-<img src="Gran%20Bazaar.jpg" alt="Gran Bazar di Istanbul" class="itinerary-photo">
+<article class="card"><img src="Gran%20Bazaar.jpg" alt="Gran Bazar di Istanbul" class="itinerary-photo"><div class="day"><span class="pill">lun 2 novembre</span><h3>Topkapı → Grand Bazaar → Nişantaşı</h3>
 <div class="day-item"><div class="time">mattina</div><strong>Palazzo Topkapı <span class="type">palazzo ottomano</span></strong><span>Grande complesso ottomano con cortili, collezioni e vista sul Bosforo. È una visita da fare con un po' di tempo a disposizione.</span></div>
 <div class="day-item"><div class="time">poi</div><strong>Grand Bazaar <span class="type">mercato coperto</span></strong><span>Il grande mercato storico di Beyazıt: botteghe di gioielli, tessili, ceramiche, tappeti e oggetti. Da esplorare senza l'obiettivo di “vederlo tutto”.</span></div>
 <div class="day-item"><div class="time">pranzo · orario flessibile</div><strong>Mahir Lokantası <span class="type">ristorante · Şişli</span></strong><span>Una lokanta molto amata dai locali, con cucina turca tradizionale e piatti preparati per il servizio del giorno. Possiamo valutarla per pranzo senza fissare un'ora precisa, in base a quanto tempo passiamo al Grand Bazaar.</span><div class="meal-links"><a href="https://www.tripadvisor.com/Restaurant_Review-g293974-d10302642-Reviews-Mahir_LokantasI-Istanbul.html" target="_blank">↗ recensioni</a><a href="https://www.google.com/maps/search/?api=1&query=Mahir+Lokantas%C4%B1+Tavuk%C3%A7u+Fethi+Sok+28%2FB+Istanbul" target="_blank">↗ Maps</a></div><span class="price">circa 600–1.400 ₺ / persona · ≈ 11–25 €</span></div>
