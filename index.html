@@ -1,185 +1,1038 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#f7f8f6">
-<meta name="description" content="Guida di viaggio condivisibile a Istanbul · 30 ottobre – 3 novembre 2026">
-<title>Istanbul · 30 ottobre – 3 novembre 2026</title>
-<style>
-:root{
-  --ink:#252b2d;--muted:#6d7678;--paper:#f7f8f6;--paper2:#fff;
-  --sand:#e4e9ec;--blue:#2f667b;--blue-dark:#214e60;
-  --tile:#4d8ea4;--tile-light:#e6f1f4;
-  --terracotta:#a96755;--terracotta-light:#f3e6e1;
-  --brass:#a58a5a;--brass-light:#f1ede4;--line:#dfe3e0;
-  --white:#fff;--shadow:0 14px 40px rgba(37,43,45,.07);--radius:22px;
-}
-*{box-sizing:border-box} html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
-a{color:inherit}.container{width:min(1120px,calc(100% - 36px));margin:auto}
-.hero{min-height:92vh;display:flex;align-items:end;position:relative;overflow:hidden;background:linear-gradient(180deg,rgba(20,29,27,.08),rgba(20,29,27,.58)),url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Hagia_Sophia_Istanbul_Old_City%2C_Turkey_(Unsplash).jpg?width=1800") center/cover}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(24,31,28,.36),transparent 65%);pointer-events:none}
-.hero-inner{position:relative;z-index:1;padding:70px 0 64px;color:#fff;width:min(1120px,calc(100% - 36px));margin:auto}
-.kicker{letter-spacing:.18em;text-transform:uppercase;font-size:12px;font-weight:700;opacity:.92}
-.hero h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(56px,9vw,112px);line-height:.88;margin:18px 0 22px;letter-spacing:-.045em}
-.hero .date{font-size:17px;letter-spacing:.06em}.hero .sub{margin-top:16px;max-width:650px;color:#f5f7f6;font-size:16px}
-.scroll-note{margin-top:34px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.8}
-.nav{position:sticky;top:0;z-index:20;background:rgba(247,248,246,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(223,227,224,.9)}
-.nav-inner{display:flex;gap:8px;overflow:auto;padding:11px 0}
-.nav a{flex:0 0 auto;text-decoration:none;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:9px 12px;border-radius:999px;color:var(--muted)}
-.nav a:hover{background:var(--tile-light);color:var(--blue-dark)}
-section{padding:78px 0}.eyebrow{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.18em;color:var(--blue)}
-h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(36px,5vw,56px);line-height:1;margin:10px 0 14px;letter-spacing:-.035em}
-.lead{max-width:760px;font-size:17px;color:#4f595c}.grid{display:grid;gap:18px}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
-.card{background:var(--paper2);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 8px 30px rgba(45,45,38,.04);overflow:hidden}
-.card-pad{padding:24px}.card h3{font-family:Georgia,"Times New Roman",serif;font-size:27px;font-weight:400;margin:0 0 7px}.card p{margin:5px 0 0;color:#566064}
-.pill{display:inline-block;padding:6px 9px;border-radius:999px;background:var(--tile-light);color:var(--blue-dark);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
-.image{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
-.itinerary-photo{display:block;width:100%;max-width:560px;aspect-ratio:16/9;object-fit:cover;border-radius:14px;margin:12px 0 18px}
-.day{position:relative;padding:28px 28px 28px 35px}.day:before{content:"";position:absolute;left:18px;top:34px;bottom:34px;width:2px;background:var(--sand)}
-.day-item{position:relative;padding:0 0 18px 22px}.day-item:last-child{padding-bottom:0}
-.day-item:before{content:"";position:absolute;left:-1px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--terracotta);box-shadow:0 0 0 4px var(--paper2)}
-.time{font-size:10px;text-transform:uppercase;letter-spacing:.14em;font-weight:700;color:var(--terracotta)}
-.day-item strong{display:block;margin:3px 0 2px;font-size:15px}.day-item span{display:block;color:#626b6f;font-size:14px}
-.cta{display:inline-flex;align-items:center;gap:8px;text-decoration:none;margin-top:12px;padding:10px 13px;border-radius:999px;background:var(--blue-dark);color:#fff;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
-.cta.light{background:var(--tile-light);color:var(--blue-dark)}
-.linkrow{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}.linkrow a{display:inline-flex;align-items:center;text-decoration:none;padding:7px 9px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--blue-dark)}.linkrow a:hover{background:var(--tile-light)}
-.editorial-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:28px}.place-card{background:var(--paper2);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 30px rgba(45,45,38,.04)}.place-card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}.place-body{padding:20px}.place-body h3{font-family:Georgia,"Times New Roman",serif;font-size:28px;font-weight:400;margin:4px 0 7px}.place-body p{margin:0;color:#566064}.place-meta{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--blue);font-weight:700}.source-note{font-size:11px;color:var(--muted);margin-top:8px}
-@media(max-width:800px){.editorial-grid{grid-template-columns:1fr}}
-.note{margin-top:20px;padding:18px 20px;border-left:3px solid var(--brass);background:var(--brass-light);border-radius:0 14px 14px 0;color:#555f61;font-size:14px}
-.restaurant{min-height:100%}.restaurant .meta{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--blue);font-weight:700}.restaurant .address{font-size:13px;color:#6c7477;margin-top:12px}
-.two-col{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:stretch}
-.feature{min-height:440px;border-radius:28px;overflow:hidden;position:relative;background:linear-gradient(180deg,rgba(0,0,0,.06),rgba(0,0,0,.68)),url("https://unsplash.com/photos/IVjxZPxnrUc/download?force=true&w=1600") center/cover;color:#fff;display:flex;align-items:end}
-.feature .inside{padding:28px}.feature h3{font:400 43px/1 Georgia,"Times New Roman",serif;margin:6px 0 8px}.feature p{max-width:550px;margin:0;color:#f4f7f6}
-.small-list{display:grid;gap:10px}.small-list a{text-decoration:none;display:flex;justify-content:space-between;gap:15px;padding:15px 16px;border:1px solid var(--line);background:var(--paper2);border-radius:15px}.small-list a span:last-child{color:var(--muted)}
-.chips{display:flex;flex-wrap:wrap;gap:9px}.chip{padding:10px 13px;border:1px solid var(--line);background:var(--paper2);border-radius:999px;text-decoration:none;font-size:13px}
-details{border-top:1px solid var(--line);padding:16px 0}details:first-child{border-top:0}summary{cursor:pointer;list-style:none;font-weight:700}summary::-webkit-details-marker{display:none}summary:after{content:"+";float:right;color:var(--muted)}details[open] summary:after{content:"–"}
-footer{padding:55px 0 70px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
-@media(max-width:800px){.grid-2,.grid-3,.two-col{grid-template-columns:1fr}section{padding:58px 0}.hero{min-height:82vh}.hero-inner{padding-bottom:48px}.feature{min-height:360px}}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f8f6" />
+  <meta name="description" content="Guida condivisa di Istanbul · 30 ottobre – 3 novembre 2026" />
+  <meta property="og:title" content="Istanbul · 30 ottobre – 3 novembre 2026" />
+  <meta property="og:description" content="Guida di viaggio condivisibile a Istanbul, con itinerari, ristoranti, design e info pratiche." />
+  <meta property="og:type" content="website" />
+  <title>Istanbul · 30 ottobre – 3 novembre 2026</title>
+  <style>
+    :root{
+      --ink:#252b2d;
+      --muted:#6d7678;
+      --paper:#f7f8f6;
+      --paper2:#fff;
+      --sand:#e4e9ec;
+      --blue:#2f667b;
+      --blue-dark:#214e60;
+      --tile:#4d8ea4;
+      --tile-light:#e6f1f4;
+      --terracotta:#a96755;
+      --terracotta-light:#f3e6e1;
+      --brass:#a58a5a;
+      --brass-light:#f1ede4;
+      --line:#dfe3e0;
+      --white:#fff;
+      --shadow:0 14px 40px rgba(37,43,45,.07);
+      --radius:22px;
+    }
 
-.type{display:inline-block;margin-right:7px;color:var(--blue);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em}
-.see-table{width:100%;border-collapse:collapse;margin-top:22px;font-size:14px}.see-table th,.see-table td{padding:12px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.see-table th{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--blue)}.see-table td:first-child{font-weight:700}.linkrow a{display:inline-block;margin-right:10px}
-.meal-links{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}.meal-links a{display:inline-flex;align-items:center;text-decoration:none;padding:7px 9px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--blue-dark)}.price{display:inline-block;margin-top:8px;padding:5px 8px;border-radius:999px;background:var(--brass-light);color:#75633c;font-size:10px;font-weight:700;letter-spacing:.04em}.day-item .meal-links{margin-top:10px}.day-item .meal-links a{font-size:9px}
-.day-item span a{color:var(--blue-dark);font-weight:700;text-decoration:underline;text-underline-offset:3px}.day-item span a:hover{opacity:.75}.review-link{margin-left:4px;font-size:.9em;white-space:nowrap}</style>
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Arial,Helvetica,sans-serif;
+      color:var(--ink);
+      background:var(--paper);
+      line-height:1.55;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    a{
+      color:inherit;
+    }
+
+    a:focus-visible,
+    summary:focus-visible{
+      outline:3px solid var(--blue);
+      outline-offset:3px;
+    }
+
+    .skip-link{
+      position:absolute;
+      left:-9999px;
+      top:0;
+      background:#fff;
+      color:var(--ink);
+      padding:.8rem 1rem;
+      z-index:1000;
+      border-radius:0 0 10px 10px;
+    }
+
+    .skip-link:focus{
+      left:1rem;
+    }
+
+    .container{
+      width:min(1120px,calc(100% - 36px));
+      margin:0 auto;
+    }
+
+    .hero{
+      min-height:92vh;
+      display:flex;
+      align-items:flex-end;
+      position:relative;
+      overflow:hidden;
+      background:
+        linear-gradient(180deg,rgba(20,29,27,.08),rgba(20,29,27,.58)),
+        url("https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=1800&q=80")
+        center/cover no-repeat;
+    }
+
+    .hero:after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(90deg,rgba(24,31,28,.36),transparent 65%);
+      pointer-events:none;
+    }
+
+    .hero-inner{
+      position:relative;
+      z-index:1;
+      padding:70px 0 64px;
+      color:#fff;
+      width:min(1120px,calc(100% - 36px));
+      margin:0 auto;
+    }
+
+    .kicker{
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      font-size:12px;
+      font-weight:700;
+      opacity:.92;
+    }
+
+    .hero h1{
+      font-family:Georgia,"Times New Roman",serif;
+      font-weight:400;
+      font-size:clamp(56px,9vw,112px);
+      line-height:.88;
+      margin:18px 0 22px;
+      letter-spacing:-.045em;
+    }
+
+    .hero .date{
+      font-size:17px;
+      letter-spacing:.06em;
+    }
+
+    .hero .sub{
+      margin-top:16px;
+      max-width:650px;
+      color:#f5f7f6;
+      font-size:16px;
+    }
+
+    .scroll-note{
+      margin-top:34px;
+      font-size:12px;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      opacity:.8;
+    }
+
+    .nav{
+      position:sticky;
+      top:0;
+      z-index:20;
+      background:rgba(247,248,246,.94);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid rgba(223,227,224,.9);
+    }
+
+    .nav-inner{
+      display:flex;
+      gap:8px;
+      overflow:auto;
+      padding:11px 0;
+      scrollbar-width:none;
+    }
+
+    .nav-inner::-webkit-scrollbar{display:none}
+
+    .nav a{
+      flex:0 0 auto;
+      text-decoration:none;
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      padding:9px 12px;
+      border-radius:999px;
+      color:var(--muted);
+      transition:background .2s ease,color .2s ease;
+    }
+
+    .nav a:hover,
+    .nav a:focus-visible{
+      background:var(--tile-light);
+      color:var(--blue-dark);
+    }
+
+    section{
+      padding:78px 0;
+    }
+
+    .eyebrow{
+      font-size:11px;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:.18em;
+      color:var(--blue);
+    }
+
+    h2{
+      font-family:Georgia,"Times New Roman",serif;
+      font-weight:400;
+      font-size:clamp(36px,5vw,56px);
+      line-height:1;
+      margin:10px 0 14px;
+      letter-spacing:-.035em;
+    }
+
+    .lead{
+      max-width:760px;
+      font-size:17px;
+      color:#4f595c;
+    }
+
+    .grid{
+      display:grid;
+      gap:18px;
+    }
+
+    .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+
+    .card{
+      background:var(--paper2);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:0 8px 30px rgba(45,45,38,.04);
+      overflow:hidden;
+    }
+
+    .card-pad{
+      padding:24px;
+    }
+
+    .card h3{
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:27px;
+      font-weight:400;
+      margin:0 0 7px;
+    }
+
+    .card p{
+      margin:5px 0 0;
+      color:#566064;
+    }
+
+    .pill{
+      display:inline-block;
+      padding:6px 9px;
+      border-radius:999px;
+      background:var(--tile-light);
+      color:var(--blue-dark);
+      font-size:10px;
+      font-weight:700;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+    }
+
+    .type{
+      display:inline-block;
+      margin-right:7px;
+      color:var(--blue);
+      font-size:10px;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:.1em;
+    }
+
+    .cta{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      text-decoration:none;
+      margin-top:12px;
+      padding:10px 13px;
+      border-radius:999px;
+      background:var(--blue-dark);
+      color:#fff;
+      font-size:11px;
+      font-weight:700;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+    }
+
+    .cta.light{
+      background:var(--tile-light);
+      color:var(--blue-dark);
+    }
+
+    .linkrow{
+      display:flex;
+      flex-wrap:wrap;
+      gap:7px;
+      margin-top:13px;
+    }
+
+    .linkrow a{
+      display:inline-flex;
+      align-items:center;
+      text-decoration:none;
+      padding:7px 9px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:#fff;
+      font-size:10px;
+      font-weight:700;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      color:var(--blue-dark);
+    }
+
+    .linkrow a:hover{
+      background:var(--tile-light);
+    }
+
+    .note{
+      margin-top:20px;
+      padding:18px 20px;
+      border-left:3px solid var(--brass);
+      background:var(--brass-light);
+      border-radius:0 14px 14px 0;
+      color:#555f61;
+      font-size:14px;
+    }
+
+    .see-table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:22px;
+      font-size:14px;
+    }
+
+    .see-table th,
+    .see-table td{
+      padding:12px 10px;
+      border-bottom:1px solid var(--line);
+      text-align:left;
+      vertical-align:top;
+    }
+
+    .see-table th{
+      font-size:10px;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      color:var(--blue);
+    }
+
+    .see-table td:first-child{
+      font-weight:700;
+    }
+
+    .itinerary-photo{
+      display:block;
+      width:100%;
+      max-width:560px;
+      aspect-ratio:16/9;
+      object-fit:cover;
+      border-radius:14px;
+      margin:12px 0 18px;
+    }
+
+    .day{
+      position:relative;
+      padding:28px 28px 28px 35px;
+    }
+
+    .day:before{
+      content:"";
+      position:absolute;
+      left:18px;
+      top:34px;
+      bottom:34px;
+      width:2px;
+      background:var(--sand);
+    }
+
+    .day-item{
+      position:relative;
+      padding:0 0 18px 22px;
+    }
+
+    .day-item:last-child{
+      padding-bottom:0;
+    }
+
+    .day-item:before{
+      content:"";
+      position:absolute;
+      left:-1px;
+      top:7px;
+      width:9px;
+      height:9px;
+      border-radius:50%;
+      background:var(--terracotta);
+      box-shadow:0 0 0 4px var(--paper2);
+    }
+
+    .time{
+      font-size:10px;
+      text-transform:uppercase;
+      letter-spacing:.14em;
+      font-weight:700;
+      color:var(--terracotta);
+    }
+
+    .day-item strong{
+      display:block;
+      margin:3px 0 2px;
+      font-size:15px;
+    }
+
+    .day-item span{
+      display:block;
+      color:#626b6f;
+      font-size:14px;
+    }
+
+    .day-item span a{
+      color:var(--blue-dark);
+      font-weight:700;
+      text-decoration:underline;
+      text-underline-offset:3px;
+    }
+
+    .day-item span a:hover{
+      opacity:.75;
+    }
+
+    .review-link{
+      margin-left:4px;
+      font-size:.9em;
+      white-space:nowrap;
+    }
+
+    .meal-links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:7px;
+      margin-top:10px;
+    }
+
+    .meal-links a{
+      display:inline-flex;
+      align-items:center;
+      text-decoration:none;
+      padding:7px 9px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:#fff;
+      font-size:10px;
+      font-weight:700;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      color:var(--blue-dark);
+    }
+
+    .price{
+      display:inline-block;
+      margin-top:8px;
+      padding:5px 8px;
+      border-radius:999px;
+      background:var(--brass-light);
+      color:#75633c;
+      font-size:10px;
+      font-weight:700;
+      letter-spacing:.04em;
+    }
+
+    .restaurant{min-height:100%}
+    .restaurant .meta{
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:.1em;
+      color:var(--blue);
+      font-weight:700;
+    }
+
+    .restaurant .address{
+      font-size:13px;
+      color:#6c7477;
+      margin-top:12px;
+    }
+
+    .two-col{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:26px;
+      align-items:stretch;
+    }
+
+    .feature{
+      min-height:440px;
+      border-radius:28px;
+      overflow:hidden;
+      position:relative;
+      background:
+        linear-gradient(180deg,rgba(0,0,0,.06),rgba(0,0,0,.68)),
+        url("https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&w=1600&q=80")
+        center/cover no-repeat;
+      color:#fff;
+      display:flex;
+      align-items:flex-end;
+    }
+
+    .feature .inside{
+      padding:28px;
+    }
+
+    .feature h3{
+      font:400 43px/1 Georgia,"Times New Roman",serif;
+      margin:6px 0 8px;
+    }
+
+    .feature p{
+      max-width:550px;
+      margin:0;
+      color:#f4f7f6;
+    }
+
+    .small-list{
+      display:grid;
+      gap:10px;
+    }
+
+    .small-list a{
+      text-decoration:none;
+      display:flex;
+      justify-content:space-between;
+      gap:15px;
+      padding:15px 16px;
+      border:1px solid var(--line);
+      background:var(--paper2);
+      border-radius:15px;
+    }
+
+    .small-list a span:last-child{
+      color:var(--muted);
+    }
+
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:9px;
+    }
+
+    .chip{
+      padding:10px 13px;
+      border:1px solid var(--line);
+      background:var(--paper2);
+      border-radius:999px;
+      text-decoration:none;
+      font-size:13px;
+    }
+
+    details{
+      border-top:1px solid var(--line);
+      padding:16px 0;
+    }
+
+    details:first-child{
+      border-top:0;
+    }
+
+    summary{
+      cursor:pointer;
+      list-style:none;
+      font-weight:700;
+    }
+
+    summary::-webkit-details-marker{
+      display:none;
+    }
+
+    summary:after{
+      content:"+";
+      float:right;
+      color:var(--muted);
+    }
+
+    details[open] summary:after{
+      content:"–";
+    }
+
+    footer{
+      padding:55px 0 70px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:12px;
+    }
+
+    @media (max-width:800px){
+      .grid-2,
+      .grid-3,
+      .two-col{
+        grid-template-columns:1fr;
+      }
+
+      section{
+        padding:58px 0;
+      }
+
+      .hero{
+        min-height:82vh;
+      }
+
+      .hero-inner{
+        padding-bottom:48px;
+      }
+
+      .feature{
+        min-height:360px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      html{scroll-behavior:auto}
+      *{
+        animation:none !important;
+        transition:none !important;
+      }
+    }
+  </style>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Vai al contenuto</a>
 
-<header class="hero"><div class="hero-inner">
-<div class="kicker">guida di viaggio · condivisa</div><h1>Istanbul</h1>
-<div class="date">30 ottobre — 3 novembre 2026</div>
-<div class="sub">Una metropoli cosmopolita da attraversare a piedi, in tram, in traghetto e — soprattutto — senza avere fretta. Fatti trasportare e non sbagli.</div>
-<div class="scroll-note">↓ scorri per il viaggio</div>
-</div></header>
+  <header class="hero" aria-label="Hero di Istanbul">
+    <div class="hero-inner">
+      <div class="kicker">guida di viaggio · condivisa</div>
+      <h1>Istanbul</h1>
+      <div class="date">30 ottobre — 3 novembre 2026</div>
+      <div class="sub">
+        Una metropoli cosmopolita da attraversare a piedi, in tram, in traghetto e — soprattutto — senza avere fretta.
+        Fatti trasportare e non sbagli.
+      </div>
+      <div class="scroll-note">↓ scorri per il viaggio</div>
+    </div>
+  </header>
 
-<nav class="nav"><div class="container nav-inner">
-<a href="#prima">Prima</a><a href="#itinerario">Itinerario</a><a href="#mangiare">Mangiare</a><a href="#design">Design</a><a href="#vedere">Cosa vedere</a><a href="#pratica">Info utili</a>
-</div></nav>
+  <nav class="nav" aria-label="Navigazione principale">
+    <div class="container nav-inner">
+      <a href="#prima">Prima</a>
+      <a href="#itinerario">Itinerario</a>
+      <a href="#mangiare">Mangiare</a>
+      <a href="#design">Design</a>
+      <a href="#vedere">Cosa vedere</a>
+      <a href="#pratica">Info utili</a>
+    </div>
+  </nav>
 
-<main>
+  <main id="main-content">
+    <section id="prima">
+      <div class="container">
+        <div class="eyebrow">01 · prima di partire</div>
+        <h2>Info utili prima di partire</h2>
+        <p class="lead">
+          La guida è pensata per essere usata dal telefono: programma di base, alternative e indirizzi sono separati,
+          così ognuno può scegliere senza dover seguire un itinerario rigido.
+        </p>
 
-<section id="prima"><div class="container">
-<div class="eyebrow">01 · prima di partire</div><h2>Info utili prima di partire</h2>
-<p class="lead">La guida è pensata per essere usata dal telefono: programma di base, alternative e indirizzi sono separati, così ognuno può scegliere senza dover seguire un itinerario rigido.</p>
-<div class="grid grid-3" style="margin-top:30px">
+        <div class="grid grid-3" style="margin-top:30px;">
+          <article class="card">
+            <div class="card-pad">
+              <span class="pill">hotel</span>
+              <h3>Istanbul Midpoint</h3>
+              <p>Aksaray · Fatih. Comodo per T1, Marmaray e per raggiungere rapidamente la città storica.</p>
+              <a class="cta light" href="https://www.google.com/maps/search/?api=1&query=Istanbul+Midpoint+Hotel+Gazi+Mustafa+Kemal+Pasa+Cd+43+Istanbul" target="_blank" rel="noopener noreferrer">↗ Maps</a>
+            </div>
+          </article>
 
-<article class="card"><div class="card-pad"><span class="pill">hotel</span><h3>Istanbul Midpoint</h3><p>Aksaray · Fatih. Comodo per T1, Marmaray e per raggiungere rapidamente la città storica.</p><a class="cta light" href="https://www.google.com/maps/search/?api=1&query=Istanbul+Midpoint+Hotel+Gazi+Mustafa+Kemal+Pasa+Cd+43+Istanbul" target="_blank">↗ Maps</a></div></article>
+          <article class="card">
+            <div class="card-pad">
+              <span class="pill">trasporti</span>
+              <h3>Istanbulkart</h3>
+              <p>La tessera ricaricabile indispensabile per traghetti, tram, metro e funicolari. Utile averne una già in tasca.</p>
+              <a class="cta light" href="https://istanbulkart.istanbul/" target="_blank" rel="noopener noreferrer">↗ sito</a>
+            </div>
+          </article>
 
-<article class="card"><div class="card-pad"><span class="pill">trasporti</span><h3>Istanbulkart</h3><p>La tessera ricaricabile indispensabile per traghetti, tram, metro e funicolari. Utile averne una pronta per il gruppo.</p><a class="cta light" href="https://istanbulkart.istanbul/" target="_blank">↗ sito</a></div></article>
+          <article class="card">
+            <div class="card-pad">
+              <span class="pill">maratona</span>
+              <h3>Domenica 1</h3>
+              <p>La maratona modifica viabilità e spostamenti nel centro. Meglio programmare i mezzi e lasciare il taxi come seconda scelta.</p>
+              <a class="cta light" href="https://maraton.istanbul/marathon-42k-run/?lang=en" target="_blank" rel="noopener noreferrer">↗ info ufficiali</a>
+            </div>
+          </article>
+        </div>
 
-<article class="card"><div class="card-pad"><span class="pill">volo pegasus</span><h3>Sabiha Gökçen (SAW)</h3><p>Taxi ufficiale (~1.600 - 2.200 TL) o transfer privato (~40€-60€). Durata tragitto verso Aksaray: 60-80 minuti.</p></div></article>
+        <div class="note">
+          <strong>Da prenotare prima:</strong> eventuale hamam, una cena speciale e gli atelier privati di design/ceramica.
+          Per il resto conviene lasciare margine.
+        </div>
+      </div>
+    </section>
 
-</div>
-<div class="note"><strong>Da prenotare prima:</strong> eventuale hamam, una cena speciale e gli atelier privati di design/ceramica. Per il resto conviene lasciare margine.</div>
-</div></section>
+    <section id="itinerario">
+      <div class="container">
+        <div class="eyebrow">02 · prima la mappa mentale</div>
+        <h2>Cosa vedere</h2>
 
-<section id="itinerario"><div class="container">
-<div class="eyebrow">02 · prima la mappa mentale</div><h2>Cosa vedere</h2>
+        <div class="card" style="margin-top:24px;">
+          <div class="card-pad" style="padding:12px 18px;">
+            <table class="see-table" aria-label="Mappa mentale dei luoghi principali">
+              <thead>
+                <tr>
+                  <th>Luogo</th>
+                  <th>Che cos'è</th>
+                  <th>Zona</th>
+                  <th>Perché andarci</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Santa Sofia</td><td>monumento / ex basilica e moschea</td><td>Sultanahmet</td><td>Il grande punto di partenza della città storica.</td></tr>
+                <tr><td>Moschea di Süleymaniye</td><td>grande moschea ottomana</td><td>Suleymaniye / Fatih</td><td>Maestosa, meno caotica e con vista straordinaria sul Corno d'Oro.</td></tr>
+                <tr><td>Cisterna Basilica</td><td>cisterna sotterranea bizantina</td><td>Sultanahmet</td><td>Visita breve e molto scenografica.</td></tr>
+                <tr><td>Moschea Blu</td><td>moschea ottomana</td><td>Sultanahmet</td><td>Da abbinare naturalmente a Santa Sofia.</td></tr>
+                <tr><td>Arasta Bazaar</td><td>piccolo bazaar di negozi</td><td>Sultanahmet</td><td>Più raccolto del Grand Bazaar, utile per una passeggiata.</td></tr>
+                <tr><td>Eminönü</td><td>quartiere / nodo di trasporti</td><td>Corno d'Oro</td><td>Mercato delle Spezie, traghetti e balık ekmek.</td></tr>
+                <tr><td>Karaköy · Tophane · Galata</td><td>quartieri e waterfront</td><td>Beyoğlu</td><td>Gallerie, caffè, design, Torre di Galata e ristorantini.</td></tr>
+                <tr><td>İstiklal Caddesi</td><td>via pedonale iconica</td><td>Beyoğlu</td><td>La passeggiata da Piazza Taksim alla Torre di Galata.</td></tr>
+                <tr><td>Beşiktaş</td><td>quartiere storico e giovanile</td><td>Beşiktaş</td><td>Atmosfera vivace, caffè lungo il Bosforo e vita di quartiere.</td></tr>
+                <tr><td>Çukurcuma</td><td>quartiere di antiquari e design</td><td>Beyoğlu</td><td>Interessante per antiquariato e oggetti d'autore.</td></tr>
+                <tr><td>Topkapı</td><td>palazzo ottomano</td><td>Sultanahmet</td><td>Padiglioni, collezioni e vista sul Bosforo.</td></tr>
+                <tr><td>Grand Bazaar</td><td>grande mercato storico</td><td>Beyazıt</td><td>Gioielli, tessili, ceramiche, tappeti e botteghe.</td></tr>
+                <tr><td>Nişantaşı</td><td>quartiere di shopping e vita</td><td>Şişli</td><td>Moda, ristoranti e design contemporaneo.</td></tr>
+                <tr><td>Kadıköy & Moda</td><td>quartieri sulla sponda asiatica</td><td>Asia</td><td>Mercato, botteghe, caffè e la risalita verso Moda.</td></tr>
+                <tr><td>Kumkapı</td><td>quartiere storico sul Mar di Marmara</td><td>Fatih</td><td>Pesce, meyhane e un ambiente pieno di una forte storia armena.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
-<div class="card" style="margin-top:24px"><div class="card-pad" style="padding:12px 18px">
-<table class="see-table"><thead><tr><th>Luogo</th><th>Che cos'è</th><th>Zona</th><th>Perché andarci</th></tr></thead><tbody>
-<tr><td>Moschea di Süleymaniye</td><td>grande moschea ottomana</td><td>Suleymaniye / Fatih</td><td>Maestosa, meno caotica di Sultanahmet e con una vista straordinaria sul Corno d'Oro.</td></tr>
-<tr><td>Karaköy</td><td>quartiere vivace sul waterfront</td><td>Beyoğlu</td><td>Gallerie, caffè di tendenza e una straordinaria concentrazione di ristorantini.</td></tr>
-<tr><td>İstiklal Caddesi & Galata</td><td>via pedonale e torre</td><td>Beyoğlu</td><td>La passeggiata iconica da Piazza Taksim giù fino alla Torre di Galata e Karaköy.</td></tr>
-<tr><td>Beşiktaş</td><td>quartiere storico e giovanile</td><td>Besiktas</td><td>Atmosfera vivace, caffè lungo il Bosforo e vita di quartiere autentica.</td></tr>
-<tr><td>Kadıköy & Moda</td><td>quartieri sulla sponda asiatica</td><td>Asia</td><td>Mercati storici, botteghe, locali e la piacevole risalita verso Moda.</td></tr>
-<tr><td>Santa Sofia & Monumenti Classici</td><td>basilica / museo / palazzo</td><td>Sultanahmet</td><td>I grandi classici storici (Topkapı, Cisterna, Gran Bazar) da incastrare senza fretta.</td></tr>
-</tbody></table>
-</div></div>
+        <h2 style="margin-top:70px;">Itinerari suggeriti</h2>
 
-<h2 style="margin-top:70px">Itinerari suggeriti</h2>
+        <div class="grid grid-2" style="margin-top:30px;">
+          <article class="card">
+            <img src="Bosforo_Sunset.jpg" alt="Bosforo al tramonto" class="itinerary-photo" loading="lazy" decoding="async" />
+            <div class="day">
+              <span class="pill">ven 30 ottobre</span>
+              <h3>Arrivo & Karaköy</h3>
 
-<div class="grid grid-2" style="margin-top:30px">
+              <div class="day-item">
+                <div class="time">sera</div>
+                <strong>Hotel + Karaköy</strong>
+                <span>Check-in e prima uscita. Per cena la zona di Karaköy è perfetta per iniziare a scoprire i ristorantini e il cibo turco.</span>
+              </div>
 
-<article class="card"><img src="Bosforo_Sunset.jpg" alt="Bosforo al tramonto" class="itinerary-photo"><div class="day">
-<span class="pill">ven 30 ottobre</span><h3>Arrivo & Karaköy</h3>
-<div class="day-item"><div class="time">sera</div><strong>Hotel + Karaköy</strong><span>Check-in e prima uscita. Per cena la zona di Karaköy è perfetta per iniziare a scoprire i ristorantini e il cibo turco.</span></div>
-</div></article>
+              <div class="day-item">
+                <div class="time">vicino all'hotel</div>
+                <strong>Tre opzioni semplici</strong>
+                <span>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Tarihi+Şar+Restaurant+Gedikpaşa+Cd+7A+Istanbul" target="_blank" rel="noopener noreferrer">Tarihi Şar Restaurant</a>
+                  <a class="review-link" href="https://www.tripadvisor.it/Restaurant_Review-g293974-d2096877-Reviews-Tarihi_Sar_Restaurant-Istanbul.html" target="_blank" rel="noopener noreferrer">↗ Recensioni</a> —
+                  Gedikpaşa Cd. 7A, circa 2 minuti a piedi; cucina turca semplice.<br><br>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Emek+Saray+Restaurant+Galeria+Laleli+Harikzedeler+Sk+19+Istanbul" target="_blank" rel="noopener noreferrer">Emek Saray Restaurant</a>
+                  <a class="review-link" href="https://www.tripadvisor.it/Restaurant_Review-g293974-d2725757-Reviews-Emek_Saray_Restaurant-Istanbul.html" target="_blank" rel="noopener noreferrer">↗ Recensioni</a> —
+                  Galeria Laleli, Harikzedeler Sk. 19, 2° piano; più completo ma informale.<br><br>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Kebap%27s+63+Ragıp+Bey+Sk+36+Istanbul" target="_blank" rel="noopener noreferrer">Kebap’s 63</a>
+                  <a class="review-link" href="https://www.tripadvisor.co.uk/Restaurant_Review-g293974-d33247111-Reviews-Kebap_s_63-Istanbul.html" target="_blank" rel="noopener noreferrer">↗ Recensioni</a> —
+                  Ragıp Bey Sk. 36, per un kebab senza impegno.
+                </span>
+              </div>
 
-<article class="card"><img src="Moschea_blu.jpg" alt="Moschea Blu di Istanbul" class="itinerary-photo"><div class="day"><span class="pill">sab 31 ottobre</span><h3>Sultanahmet → İstiklal → Karaköy</h3>
-<div class="day-item"><div class="time">09:00 circa</div><strong>Santa Sofia <span class="type">monumento</span></strong><span>Partire presto per dedicare la prima parte della mattina ai classici (Santa Sofia, Cisterna Basilica).</span></div>
-<div class="day-item"><div class="time">pomeriggio</div><strong>Passeggiata İstiklal → Galata → Karaköy <span class="type">percorso</span></strong><span>Percorri la vivace via pedonale İstiklal partendo da Piazza Taksim, scendi verso la Torre di Galata e prosegui dritto giù fino a Karaköy.</span></div>
-<div class="day-item"><div class="time">sera</div><strong>Cena e Rakı <span class="type">rituale</span></strong><span>Fai un'ottima cena a base di piatti turchi accompagnati da un bicchiere di rakı (il tipico distillato all'anice).</span></div>
-</div></article>
+              <div class="day-item">
+                <div class="time">oppure</div>
+                <strong>Kumkapı</strong>
+                <span>È un vero <strong>quartiere storico di Fatih</strong>, sul Mar di Marmara, noto per ristoranti di pesce e meyhane (taverne). Non è il nome di un ristorante: è una zona della città.</span>
+              </div>
+            </div>
+          </article>
 
-<article class="card"><img class="image" src="engin-yapici-WA1u0scVLZU-unsplash.jpg" alt="Traghetto in arrivo a Istanbul"><div class="day"><span class="pill">dom 1 novembre</span><h3>Sponda Asiatica (Kadıköy & Moda)</h3>
-<div class="day-item"><div class="time">mattina</div><strong>Traghetto sul Bosforo <span class="type">esperienza</span></strong><span>Prendi il traghetto a Karaköy e attraversa il Bosforo fino a Kadıköy.</span></div>
-<div class="day-item"><div class="time">pomeriggio</div><strong>Mercati di Kadıköy & Moda <span class="type">quartiere</span></strong><span>Perditi a Kadıköy in mezzo ai mercati alimentari e risalite con calma a piedi fino alla tranquilla zona residenziale di Moda.</span></div>
-<div class="day-item"><div class="time">sera</div><strong>Cena in Asia o centro</strong><span>Ottimi ristorantini locali ovunque. Goditi il tè turco (çay) e un baklava al pistacchio.</span></div>
-</div></article>
+          <article class="card">
+            <img src="Moschea_blu.jpg" alt="Moschea Blu di Istanbul" class="itinerary-photo" loading="lazy" decoding="async" />
+            <div class="day">
+              <span class="pill">sab 31 ottobre</span>
+              <h3>Sultanahmet → İstiklal → Karaköy</h3>
 
-<article class="card"><img src="Gran%20Bazaar.jpg" alt="Gran Bazar di Istanbul" class="itinerary-photo"><div class="day"><span class="pill">lun 2 novembre</span><h3>Topkapı → Süleymaniye → Beşiktaş</h3>
-<div class="day-item"><div class="time">mattina</div><strong>Topkapı + Gran Bazar <span class="type">classici</span></strong><span>Visita al Palazzo Topkapı e incursione nel Grand Bazaar.</span></div>
-<div class="day-item"><div class="time">pomeriggio</div><strong>Moschea di Süleymaniye & Beşiktaş <span class="type">quartieri</span></strong><span>Visita alla magnifica Moschea di Süleymaniye, poi esplora l'atmosfera giovanile del quartiere di Beşiktaş sul Bosforo.</span></div>
-<div class="day-item"><div class="time">sera</div><strong>Cena libera</strong><span>Scegli un locale spontaneamente seguendo l'atmosfera del quartiere.</span></div>
-</div></article>
+              <div class="day-item">
+                <div class="time">09:00 circa</div>
+                <strong>Santa Sofia <span class="type">monumento</span></strong>
+                <span>Partire presto per dedicare la prima parte della mattina alla zona storica, senza concentrare troppe visite una dopo l'altra.</span>
+              </div>
 
-</div>
-<div class="card" style="margin-top:18px"><div class="card-pad"><span class="pill">mar 3 novembre</span><h3 style="margin-top:10px">Partenza</h3><p>Check-out e trasferimento a Sabiha Gökçen (SAW) con ampio margine per il traffico del ritorno.</p></div></div>
-</div></section>
+              <div class="day-item">
+                <div class="time">10:15</div>
+                <strong>Cisterna Basilica <span class="type">cisterna bizantina</span></strong>
+                <span>Una visita sotterranea molto scenografica, a pochi minuti da Santa Sofia.</span>
+              </div>
 
-<section id="mangiare"><div class="container">
-<div class="eyebrow">03 · tavola</div><h2>Mangiare</h2>
-<p class="lead">Karaköy e Kadıköy sono piene di ristorantini eccellenti. Il cibo turco è eccezionale ovunque: lasciati guidare dall'istinto.</p>
-<div class="grid grid-3" style="margin-top:30px">
+              <div class="day-item">
+                <div class="time">11:30</div>
+                <strong>Moschea Blu + Arasta Bazaar <span class="type">moschea · bazaar</span></strong>
+                <span>La moschea è uno dei grandi monumenti ottomani; l'Arasta è un piccolo bazaar di negozi, più raccolto del Grand Bazaar.</span>
+              </div>
 
-<article class="card restaurant"><div class="card-pad"><div class="meta">Nişantaşı · cucina ottomana</div><h3>Hünkar</h3><p>Ristorante storico (dal 1950). Imperdibile l'<em>hünkar beğendi</em>.</p><div class="address">Mim Kemal Öke Cd. No:21</div><span class="price">circa 800–1.500 ₺ / persona</span><div class="linkrow"><a href="https://www.hunkarlokantasi.com/" target="_blank">↗ Sito</a><a href="https://www.google.com/maps/search/?api=1&query=H%C3%BCnkar+Mim+Kemal+Oke+Cd+21+Istanbul" target="_blank">↗ Maps</a></div></div></article>
+              <div class="day-item">
+                <div class="time">12:45</div>
+                <strong>Eminönü <span class="type">quartiere</span></strong>
+                <span>Zona sul Corno d'Oro, tra il Bazar delle Spezie, il ponte di Galata e i moli dei traghetti. Per pranzo possiamo valutare <strong>Hamdi Restaurant</strong>, ristorante di kebab e cucina turca con terrazza, oppure un più informale <strong>balık ekmek</strong>, il panino con pesce alla griglia del waterfront.</span>
+                <div class="meal-links">
+                  <a href="https://www.tripadvisor.it/Restaurant_Review-g293974-d808629-Reviews-Hamdi_Restaurant-Istanbul.html" target="_blank" rel="noopener noreferrer">↗ recensioni</a>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Hamdi+Restaurant+Kal%C3%A7%C4%B1n+Sk+11+Istanbul" target="_blank" rel="noopener noreferrer">↗ Maps</a>
+                </div>
+                <span class="price">Hamdi · circa 1.000–2.000 ₺ / persona · ≈ 18–36 €</span>
+              </div>
 
-<article class="card restaurant"><div class="card-pad"><div class="meta">Şişli · cucina tradizionale</div><h3>Mahir Lokantası</h3><p>Lokanta molto amata dai locali con piatti del giorno dell'Anatolia.</p><div class="address">Tavukçu Fethi Sok. No:28/B</div><span class="price">circa 600–1.400 ₺ / persona</span><div class="linkrow"><a href="https://www.google.com/maps/search/?api=1&query=Mahir+Lokantas%C4%B1+Tavuk%C3%A7u+Fethi+Sok+28%2FB+Istanbul" target="_blank">↗ Maps</a></div></div></article>
+              <div class="day-item">
+                <div class="time">pomeriggio</div>
+                <strong>Passeggiata İstiklal → Galata → Karaköy <span class="type">percorso</span></strong>
+                <span>Percorri la vivace via pedonale İstiklal partendo da Piazza Taksim, scendi verso la Torre di Galata e prosegui giù fino a Karaköy.</span>
+              </div>
 
-<article class="card restaurant"><div class="card-pad"><div class="meta">Kadıköy · regionale</div><h3>Çiya Sofrası</h3><p>Ricette regionali e insolite nel cuore del mercato asiatico.</p><div class="address">Güneşli Bahçe Sk. No:43</div><span class="price">circa 600–1.600 ₺ / persona</span><div class="linkrow"><a href="https://www.google.com/maps/search/?api=1&query=%C3%87iya+Sofras%C4%B1+G%C3%BCne%C5%9Fli+Bah%C3%A7e+Sk+43+Istanbul" target="_blank">↗ Maps</a></div></div></article>
+              <div class="day-item">
+                <div class="time">sera · opzioni</div>
+                <strong>Beyoğlu & Karaköy <span class="type">quartieri</span></strong>
+                <span>Fai un'ottima cena a base di cibo turco e un bicchiere di <strong>rakı</strong>. Puoi valutare <strong>Hıcı Abdullah</strong>, storico ristorante di cucina turca vicino a İstiklal, oppure <strong>Karaköy Lokantası</strong>.</span>
+                <div class="meal-links">
+                  <a href="https://www.google.com/maps/search/?api=1&query=H%C4%B1c%C4%B1+Abdullah+Istanbul" target="_blank" rel="noopener noreferrer">↗ Hıcı Abdullah · Maps</a>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Karak%C3%B6y+Lokantas%C4%B1+Istanbul" target="_blank" rel="noopener noreferrer">↗ Karaköy Lokantası · Maps</a>
+                </div>
+              </div>
+            </div>
+          </article>
 
-</div>
-<div class="note"><strong>I consigli locali:</strong> Fai almeno un pasto con il <strong>Rakı</strong> (il pastis turco all'anice), bevi regolarmente il tè <strong>Çay</strong> e concediti un <strong>Baklava</strong> al pistacchio (zucchero puro!).</div>
-</div></section>
+          <article class="card">
+            <img class="image" src="engin-yapici-WA1u0scVLZU-unsplash.jpg" alt="Traghetto in arrivo a Istanbul" loading="lazy" decoding="async" />
+            <div class="day">
+              <span class="pill">dom 1 novembre</span>
+              <h3>Maratona + Sponda Asiatica</h3>
 
-<section id="design"><div class="container">
-<div class="eyebrow">04 · design & shopping</div><h2>Ceramiche, tessili, gioielli</h2>
-<p class="lead">Indirizzi selezionati per artigianato, design e oggetti di ricerca.</p>
-<div class="card" style="margin-top:20px"><div class="card-pad">
-<p><strong>Botteghe consigliate:</strong> Hiç Contemporary Crafts (Galata), Touline Ceramics, Hakan Ezer (Çukurcuma), Armaggan (Nuruosmaniye), Jennifer's Hamam e Sedef Çalarkan (Nişantaşı).</p>
-</div></div>
-</div></section>
+              <div class="day-item">
+                <div class="time">mattina</div>
+                <strong>Maratona <span class="type">evento</span></strong>
+                <span>La gara attraversa il Bosforo e coinvolge molte strade del centro: conviene tenere conto delle modifiche alla viabilità.</span>
+              </div>
 
-<section id="vedere"><div class="container">
-<div class="eyebrow">05 · la città</div>
-<h2>Da vedere e da vivere</h2>
-<details open><summary>Moschea di Süleymaniye</summary><p>Un capolavoro assoluto, meno affollato di Sultanahmet, con una terrazza panoramica magnifica sul Corno d'Oro.</p></details>
-<details><summary>Da Taksim a Karaköy via İstiklal e Galata</summary><p>La grande passeggiata classica in discesa lungo la via pedonale İstiklal, passando per la Torre di Galata fino ad arrivare ai locali di Karaköy.</p></details>
-<details><summary>Kadıköy & Moda (Sponda Asiatica)</summary><p>Attraversamento in traghetto, esplorazione dei mercati di Kadıköy e passeggiata rilassata fino al quartiere di Moda.</p></details>
-<details><summary>Quartiere Besiktas</summary><p>Atmosfera giovane e vivace lungo il Bosforo.</p></details>
-</div></section>
+              <div class="day-item">
+                <div class="time">traghetto</div>
+                <strong>Attraversare il Bosforo <span class="type">esperienza</span></strong>
+                <span>Prendi il traghetto a Karaköy e attraversa il Bosforo fino a Kadıköy.</span>
+              </div>
 
-<section id="pratica"><div class="container">
-<div class="eyebrow">06 · praticità</div>
-<h2>Muoversi senza complicarsi la vita</h2>
-<div class="card-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:20px">
-<article class="card"><div class="card-pad"><h3>Istanbulkart</h3><p>La carta magnetica ricaricabile indispensabile per tram, metro, funicolari e traghetti.</p></div></article>
-<article class="card"><div class="card-pad"><h3>Traghetti</h3><p>Il modo migliore in assoluto per spostarsi tra Europa e Asia godendosi lo Stretto.</p></div></article>
-</div>
-</div></section>
+              <div class="day-item">
+                <div class="time">pomeriggio</div>
+                <strong>Kadıköy & Moda <span class="type">quartiere</span></strong>
+                <span>Perditi a Kadıköy in mezzo ai mercati, scopri le botteghe e risali a piedi fino alla tranquilla zona residenziale di Moda. Se ci fermiamo a pranzo, c'è <strong>Çiya Sofrası</strong>.</span>
+                <div class="meal-links">
+                  <a href="https://www.tripadvisor.com/Restaurant_Review-g293974-d776065-Reviews-Ciya_Sofrasi-Istanbul.html" target="_blank" rel="noopener noreferrer">↗ Çiya · recensioni</a>
+                  <a href="https://www.google.com/maps/search/?api=1&query=%C3%87iya+Sofras%C4%B1+G%C3%BCne%C5%9Fli+Bah%C3%A7e+Sk+43+Istanbul" target="_blank" rel="noopener noreferrer">↗ Çiya · Maps</a>
+                </div>
+                <span class="price">Çiya · circa 600–1.600 ₺ / persona · ≈ 11–29 €</span>
+              </div>
 
-</main>
-<footer><div class="container">Istanbul · 30 ottobre – 3 novembre 2026 · Guida di viaggio condivisa</div></footer>
+              <div class="day-item">
+                <div class="time">sera</div>
+                <strong>Cena, Çay e Baklava</strong>
+                <span>Goditi una cena locale, bevi il tè tradizionale <strong>çay</strong> e prova il <strong>baklava</strong> al pistacchio (zucchero puro!).</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="Gran%20Bazaar.jpg" alt="Gran Bazar di Istanbul" class="itinerary-photo" loading="lazy" decoding="async" />
+            <div class="day">
+              <span class="pill">lun 2 novembre</span>
+              <h3>Topkapı → Süleymaniye → Beşiktaş</h3>
+
+              <div class="day-item">
+                <div class="time">mattina</div>
+                <strong>Palazzo Topkapı + Grand Bazaar <span class="type">classici</span></strong>
+                <span>Visita al complesso ottomano e incursione nel grande mercato storico di Beyazıt.</span>
+              </div>
+
+              <div class="day-item">
+                <div class="time">pranzo</div>
+                <strong>Mahir Lokantası <span class="type">ristorante · Şişli</span></strong>
+                <span>Una lokanta molto amata dai locali, con cucina turca tradizionale.</span>
+                <div class="meal-links">
+                  <a href="https://www.tripadvisor.com/Restaurant_Review-g293974-d10302642-Reviews-Mahir_LokantasI-Istanbul.html" target="_blank" rel="noopener noreferrer">↗ recensioni</a>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Mahir+Lokantas%C4%B1+Tavuk%C3%A7u+Fethi+Sok+28%2FB+Istanbul" target="_blank" rel="noopener noreferrer">↗ Maps</a>
+                </div>
+                <span class="price">circa 600–1.400 ₺ / persona · ≈ 11–25 €</span>
+              </div>
+
+              <div class="day-item">
+                <div class="time">pomeriggio</div>
+                <strong>Moschea di Süleymaniye & Beşiktaş <span class="type">quartieri</span></strong>
+                <span>Visita alla magnifica Moschea di Süleymaniye, poi spostati a Beşiktaş per vivere l'atmosfera giovanile e i caffè lungo il Bosforo.</span>
+              </div>
+
+              <div class="day-item">
+                <div class="time">sera</div>
+                <strong>Cena libera</strong>
+                <span>Una delle cene speciali non ancora provate o scelta spontanea.</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="card" style="margin-top:18px;">
+          <div class="card-pad">
+            <span class="pill">mar 3 novembre</span>
+            <h3 style="margin-top:10px;">Partenza</h3>
+            <p>Check-out e trasferimento a Sabiha Gökçen (SAW). Il traffico può incidere molto sui tempi, quindi qui conviene essere più prudenti con l'orario.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mangiare">
+      <div class="container">
+        <div class="eyebrow">03 · tavola</div>
+        <h2>Mangiare</h2>
+        <p class="lead">
+          Una selezione ragionata per zona e occasione: dai ristoranti più importanti alle piccole lokanta, fino a indirizzi vegetariani e vegani.
+          Non serve prenotare tutto: alcune funzionano proprio meglio con un approccio spontaneo.
+        </p>
+
+        <div class="grid grid-3" style="margin-top:30px;">
+          <article class="card restaurant">
+            <div class="card-pad">
+              <div class="meta">Nişantaşı · cucina ottomana / turca</div>
+              <h3>Hünkar</h3>
+              <p>Ristorante storico, nato nel 1950. Cucina di tradizione ottomana e turca; il <em>hünkar beğendi</em> è uno dei piatti da cercare.</p>
+              <div class="address">Mim Kemal Öke Cd. No:21</div>
+              <span class="price">circa 800–1.500 ₺ / persona · ≈ 15–27 €</span>
+              <div class="linkrow">
+                <a href="https://www.hunkarlokantasi.com/" target="_blank" rel="noopener noreferrer">↗ Sito</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=H%C3%BCnkar+Mim+Kemal+Oke+Cd+21+Istanbul" target="_blank" rel="noopener noreferrer">↗ Maps</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card restaurant">
+            <div class="card-pad">
+              <div class="meta">Şişli · cucina turca tradizionale</div>
+              <h3>Mahir Lokantası</h3>
+              <p>Lokanta molto amata dai locali, con classici turchi e piatti dell'Anatolia. Ottima opzione per un pranzo informale.</p>
+              <div class="address">Tavukçu Fethi Sok. No:28/B</div>
+              <span class="price">circa 600–1.400 ₺ / persona · ≈ 11–25 €</span>
+              <div class="linkrow">
+                <a href="https://www.tripadvisor.com/Restaurant_Review-g293974-d10302642-Reviews-Mahir_LokantasI-Istanbul.html" target="_blank" rel="noopener noreferrer">↗ Recensioni</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Mahir+Lokantas%C4%B1+Tavuk%C3%A7u+Fethi+Sok+28%2FB+Istanbul" target="_blank" rel="noopener noreferrer">↗ Maps</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card restaurant">
+            <div class="card-pad">
+              <div class="meta">Kadıköy · cucina regionale</div>
+              <h3>Çiya Sofrası</h3>
+              <p>Ricette regionali e meno comuni dell'Anatolia, con piatti che cambiano e una forte attenzione alla tradizione locale.</p>
+              <div class="address">Güneşli Bahçe Sk. No:43</div>
+              <span class="price">circa 600–1.600 ₺ / persona · ≈ 11–29 €</span>
+              <div class="linkrow">
+                <a href="https://www.tripadvisor.com/Restaurant_Review-g293974-d776065-Reviews-Ciya_Sofrasi-Istanbul.html" target="_blank" rel="noopener noreferrer">↗ Recensioni</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=%C3%87iya+Sofras%C4%B1+G%C3%BCne%C5%9Fli+Bah%C3%A7e+Sk+43+Istanbul" target="_blank" rel="noopener noreferrer">↗ Maps</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="note">
+          <strong>I consigli locali:</strong> fai almeno un pasto con il <strong>Rakı</strong> (il pastis turco all'anice), bevi regolarmente il tè <strong>Çay</strong> e concediti un <strong>baklava</strong> al pistacchio.
+        </div>
+      </div>
+    </section>
+
+    <section id="design">
+      <div class="container">
+        <div class="eyebrow">04 · design & shopping</div>
+        <h2>Ceramiche, tessili, gioielli</h2>
+        <p class="lead">Indirizzi selezionati per artigianato, design e oggetti di ricerca.</p>
+
+        <div class="card" style="margin-top:20px;">
+          <div class="card-pad">
+            <p>
+              <strong>Botteghe consigliate:</strong>
+              Hiç Contemporary Crafts (Galata), Touline Ceramics, Hakan Ezer (Çukurcuma), Armaggan (Nuruosmaniye), Jennifer's Hamam e Sedef Çalarkan (Nişantaşı).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="vedere">
+      <div class="container">
+        <div class="eyebrow">05 · la città</div>
+        <h2>Da vedere e da vivere</h2>
+
+        <details open>
+          <summary>Moschea di Süleymaniye</summary>
+          <p>Un capolavoro assoluto, meno affollato di Sultanahmet, con una terrazza panoramica magnifica sul Corno d'Oro.</p>
+        </details>
+
+        <details>
+          <summary>Da Taksim a Karaköy via İstiklal e Galata</summary>
+          <p>La grande passeggiata classica in discesa lungo la via pedonale İstiklal, passando per la Torre di Galata fino ad arrivare ai waterfront.</p>
+        </details>
+
+        <details>
+          <summary>Kadıköy & Moda (Sponda Asiatica)</summary>
+          <p>Attraversamento in traghetto, esplorazione dei mercati di Kadıköy e passeggiata rilassata fino al quartiere di Moda.</p>
+        </details>
+
+        <details>
+          <summary>Quartiere Beşiktaş</summary>
+          <p>Atmosfera giovane e vivace lungo il Bosforo, perfetta per un caffè e una passeggiata serale.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="pratica">
+      <div class="container">
+        <div class="eyebrow">06 · praticità</div>
+        <h2>Muoversi senza complicarsi la vita</h2>
+
+        <div class="grid grid-2" style="margin-top:20px;">
+          <article class="card">
+            <div class="card-pad">
+              <h3>Istanbulkart</h3>
+              <p>La carta magnetica ricaricabile indispensabile per tram, metro, funicolari e traghetti.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-pad">
+              <h3>Traghetti</h3>
+              <p>Il modo migliore in assoluto per spostarsi tra Europa e Asia godendosi lo Stretto.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      Istanbul · 30 ottobre – 3 novembre 2026 · Guida di viaggio condivisa
+    </div>
+  </footer>
 </body>
 </html>
